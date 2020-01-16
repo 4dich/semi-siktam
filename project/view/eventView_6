@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>eventView_6</title>
+    <link rel="stylesheet" href="../resources/css/headerfooterLayout.css">
+    <link rel="stylesheet" href="../resources/css/eventView_6.css">
+</head>
+<body>
+    <!-- 헤더 시작 -->
+    <header>
+        <nav id="nav">
+        <div id="logodiv"><img id="logo" src="../resources/images/KakaoTalk_20200101_193858750.png" alt=""></div>
+        <div id="navp">
+            <a class="navp" href=""><span>로그인</span></a>
+            <a class="navp" href=""><span>마이페이지</span></a>
+        </div>
+        </nav>
+    </header>
+
+    <!-- 이 안에 작업하기 -->
+    <div id="mainBanner">
+        <div id="mainImg">
+
+        </div>
+        <div id="mainText">
+            <h1>전국 쌀국수</h1> <br>
+            <h2>TOP 5</h2>
+        </div>
+    
+        <div id="viewBody">
+            
+            <div class="bannerMenu">
+                <div class="menuImg">
+                    <img src="../resources/images/tamhate1.jpg" alt="">
+                </div>
+                <div class="menuText">
+                    <h3 class="rank">TOP 1</h3>
+                    <h3 class="storeName">에머이</h3>
+                    <p>쌀국수</p>
+                    <input type="button" value="위치보기">
+                    <input type="button" value="예약하기">
+                </div>
+            </div>
+            <div class="bannerMenu">
+                <div class="menuImg">
+                    <img src="../resources/images/tamhate1.jpg" alt="">
+                </div>
+                <div class="menuText">
+                    <h3 class="rank">TOP 2</h3>
+                    <h3 class="storeName">에머이</h3>
+                    <p>쌀국수</p>
+                    <input type="button" value="위치보기">
+                    <input type="button" value="예약하기">
+                </div>
+            </div>
+            <div class="bannerMenu">
+                <div class="menuImg">
+                    <img src="../resources/images/tamhate1.jpg" alt="">
+                </div>
+                <div class="menuText">
+                    <h3 class="rank">TOP 3</h3>
+                    <h3 class="storeName">에머이</h3>
+                    <p>쌀국수</p>
+                    <input type="button" value="위치보기">
+                    <input type="button" value="예약하기">
+                </div>
+            </div>
+            <div class="bannerMenu">
+                <div class="menuImg">
+                    <img src="../resources/images/tamhate1.jpg" alt="">
+                </div>
+                <div class="menuText">
+                    <h3 class="rank">TOP 4</h3>
+                    <h3 class="storeName">에머이</h3>
+                    <p>쌀국수</p>
+                    <input type="button" value="위치보기">
+                    <input type="button" value="예약하기">
+                </div>
+            </div>
+            <div class="bannerMenu">
+                <div class="menuImg">
+                    <img src="../resources/images/tamhate1.jpg" alt="">
+                </div>
+                <div class="menuText">
+                    <h3 class="rank">TOP 5</h3>
+                    <h3 class="storeName">에머이</h3>
+                    <p>쌀국수</p>
+                    <input type="button" value="위치보기">
+                    <input type="button" value="예약하기">
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+   
+
+
+    
+
+    <!-- 푸터 시작 -->
+    <footer>
+
+    </footer>
+</body>
+</html>
