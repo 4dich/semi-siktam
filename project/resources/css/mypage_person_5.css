@@ -131,6 +131,7 @@
     box-shadow: 0px 0px 4px grey;
     margin: 4%;
     margin-right: 5px;
+    position: relative;
 }
 .registStore2Add{
     width: 185px;
@@ -143,6 +144,23 @@
     position: absolute;
     overflow: hidden;
     margin-left: 8px;
+}
+.favorite{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    right: 5px;
+    background: white;
+    top: 5px;
+    box-shadow: 0px 0px 4px grey;
+}
+.star{
+    color: gray;
+    font-size: 17px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* 내가 등록한 업체 사진 */
