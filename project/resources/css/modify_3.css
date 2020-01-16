@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+}
+
+#modiTop{ /*예약수정텍스트*/
+    text-align: left;
+    padding-top: 10%;
+    padding-left: 5%;
+
+}
+#modifyF{ /*전체묶음*/
+    text-align: center;
+    padding-top: 5%;
+
+
+}
+
+#modify1{ /*왼쪽*/
+    display : inline-block;
+    text-align: center;
+
+
+}
+#modify2{ /*오른쪽*/
+    display : inline-block; 
+    text-align: center;
+
+    border: 1px;
+    color: black;
+}
+
+#notice3{ /*오른쪽 안 공지 및 이용약관*/
+    border:1px solid gray;
+    background:rgb(245, 245, 245);
+    text-align:left;
+    width:100%;
+    height:200px;
+    overflow: scroll;
+    margin-top:10px;
+    height: 350px;
+
+}
+
+.modifyMenu{
+    width: 25%;
+    height:10%;
+    background:rgb(238, 238, 238);
+    display: inline-block;
+    position: relative;
+    overflow:scroll;
+    text-align: center;
+    
+    
+}
+
+#modifyMenu_1{
+    display: inline-block;
+
+}
+
+.btn{
+    text-align: center;
+
+}
+.size{
+    text-align:left;
+    width:200px;
+    height:30px; 
+}
