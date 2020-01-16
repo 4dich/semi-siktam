@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>식탐메인</title>
+    <link rel="stylesheet" href="../resources/css/headerfooterLayout.css">
+    <link rel="stylesheet" href="../resources/css/main_6.css">
+    <script src="../resources/js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <!-- 헤더 시작 -->
+    <header>
+        <nav id="nav">
+        <div id="logodiv"><img id="logo" src="../resources/images/KakaoTalk_20200101_193858750.png" alt=""></div>
+        <div id="navp">
+            <a class="navp" href=""><span>로그인</span></a>
+            <a class="navp" href=""><span>마이페이지</span></a>
+        </div>
+        </nav>
+    </header>
+
+    <!-- 이 안에 작업하기 -->
+
+    <div id="mainbox">
+
+        <div id="searchbox">
+            <input id="searchtext" type="text" placeholder="  지역을 입력해주세요">
+            <div id="searchiconbox">
+                <img id="searchicon" src="../resources/images/search.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="bannersection">
+        <ul>
+            <li class="banner">               
+                <div class="bannertext1">서울 곱창 맛집<br>TOP 5</div>
+                <div class="bannerimgb1"></div>                              
+            </li>
+            
+            
+            <li class="banner">               
+                <div class="bannertext2">전국 쌀국수 맛집<br>TOP 5</div>
+                <div class="bannerimgb2"></div>                              
+            </li>
+            <li class="banner">               
+                <div class="bannertext3">서울 닭발 맛집<br>TOP 5</div>
+                <div class="bannerimgb3"></div>                              
+            </li>
+            <li class="banner">               
+                <div class="bannertext4">서울 초계탕 맛집<br>TOP 5</div>
+                <div class="bannerimgb4"></div>                              
+            </li>
+            <li class="banner">               
+                <div class="bannertext5">서울 족발 맛집<br>TOP 5</div>
+                <div class="bannerimgb5"></div>                              
+            </li>
+            <li class="banner">               
+                <div class="bannertext6">서울 돈까스 맛집 <br>TOP 5</div>
+                <div class="bannerimgb6"></div>                              
+            </li>
+        </ul>
+    </div>
+    
+
+    <script>
+        $(function(){
+            // 배너 1
+            $('.bannerimgb1').hover(function(){
+                $('.bannertext1').css({
+                    'color':'white',
+                    'cursor':'pointer'
+                });
+                $('.bannerimgb1').css({
+                    'opacity':'1',
+                    'cursor':'pointer'
+                });                
+            },function(){
+                $('.bannertext1').css('color','black');
+                $('.bannerimgb1').css('opacity','0.3');
+            });
+            // 배너 2
+            $('.bannerimgb2').hover(function(){
+                $('.bannertext2').css({
+                    'color':'white',
+                    'cursor':'pointer'
+                });
+                $('.bannerimgb2').css({
+                    'opacity':'1',
+                    'cursor':'pointer'
+                });                
+            },function(){
+                $('.bannertext2').css('color','black');
+                $('.bannerimgb2').css('opacity','0.3');
+            });
+            // 배너 3
+            $('.bannerimgb3').hover(function(){
+                $('.bannertext3').css({
+                    'color':'white',
+                    'cursor':'pointer'
+  
+                });
+                $('.bannerimgb3').css({
+                    'opacity':'1',
+                    'cursor':'pointer'
+                });                
+            },function(){
+                $('.bannertext3').css('color','black');
+                $('.bannerimgb3').css('opacity','0.3');
+            });
+            // 배너 4
+            $('.bannerimgb4').hover(function(){
+                $('.bannertext4').css({
+                    'color':'white',
+                    'cursor':'pointer'
+                });
+                $('.bannerimgb4').css({
+                    'opacity':'1',
+                    'cursor':'pointer'
+                });                
+            },function(){
+                $('.bannertext4').css('color','black');
+                $('.bannerimgb4').css('opacity','0.3');
+            });
+            // 배너 5
+            $('.bannerimgb5').hover(function(){
+                $('.bannertext5').css({
+                    'color':'white',
+                    'cursor':'pointer'
+                });
+                $('.bannerimgb5').css({
+                    'opacity':'1',
+                    'cursor':'pointer'
+                });                
+            },function(){
+                $('.bannertext5').css('color','black');
+                $('.bannerimgb5').css('opacity','0.3');
+            });
+            // 배너 6
+            $('.bannerimgb6').hover(function(){
+                $('.bannertext6').css({
+                    'color':'white',
+                    'cursor':'pointer'
+                });
+                $('.bannerimgb6').css({
+                    'opacity':'1',
+                    'cursor':'pointer'
+                });                
+            },function(){
+                $('.bannertext6').css('color','black');
+                $('.bannerimgb6').css('opacity','0.3');
+            });
+        });
+    </script>
+
+
+
+
+
+   
+
+
+    
+
+    <!-- 푸터 시작 -->
+    <footer>
+
+    </footer>
+</body>
+</html>

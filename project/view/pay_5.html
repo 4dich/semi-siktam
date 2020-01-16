@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>pay2</title>
+    <link rel="stylesheet" href="../resources/css/headerfooterLayout.css">
+    <link rel="stylesheet" href="../resources/css/pay_5.css">
+    <script src="../../../4.JQuery/resources/js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <!-- 헤더 시작 -->
+    <header>
+        <nav id="nav">
+        <div id="logodiv"><img id="logo" src="../resources/images/KakaoTalk_20200101_193858750.png" alt=""></div>
+        <div id="navp">
+            <a class="navp" href=""><span>로그인</span></a>
+            <a class="navp" href=""><span>마이페이지</span></a>
+        </div>
+        </nav>
+    </header>
+
+    <!-- 이 안에 작업하기 -->
+    <div id="wrap">
+        <div id="contentBox">
+            <div id="content1" class="content">
+                <div id="content1-1">
+                    <div id="title">
+                        <p class="title-1"><b>결제하기</b></p>
+                    </div>
+                    <div id="sub-title">
+                        <p class="title-1"><b>결제수단 선택</b></p>
+                    </div>
+                    <p class="sub-sub-title">온라인 결제</p><hr>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>일반결제</th>
+                                <td class="noline">
+                                    <input type="radio" id="creditcard1" class="pay"><label for="creditcard1">신용카드</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>네이버페이 결제</th>
+                                <td class="noline">
+                                    <label for="creditcard2"><input type="radio" id="creditcard2" class="pay">
+                                    <img src="../resources/images/네이버페이_로고_(800px_X_400px).jpg" id="naver" alt="네이버페이로고"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>카카오페이 결제</th>
+                                <td class="noline">
+                                    <label for="creditcard3"><input type="radio" id="creditcard3" class="pay">
+                                    <img src="../resources/images/카카오페이.png"  id="kakao" alt="카카오페이"></label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="content1-2">
+                    <div id="sub-title">
+                        <p class="title-1"><b>마일리지 사용</b></p>
+                    </div>
+                    <input type="text" class="mileage" id="A" value="0"><label id="won1">원 <--</label>
+                    <input type="text" class="mileage" id="B" value="10000" style="text-align: left;"><label id="won2">원(사용가능 마일리지)</label>
+                    <button id="appliance" >적용</button>
+                    
+                </div>
+                <div id="content1-3">
+                    <div id="sub-title">
+                        <p class="title-1"><b>할인쿠폰 선택</b></p>
+                    </div>
+                    <input type="text" id="coupon"><button id="couponclick" onclick="pcheck();">쿠폰선택</button>
+                    
+                </div>
+            </div>
+            
+            
+            <div id="content2" class="content">
+                <div id="content1-1">
+                    <div id="sub-title">
+                        <p class="title-1"><b>주문내역</b></p>
+                    </div>
+                    <div id="sub-sub-title2">
+                        <p class="title-1"><b>역전우동-역삼점</b></p>
+                    </div>
+                    <div id="menulist">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        // 사용 가능한 마일리지 사용할 마일리지 보여주기 A가 사용 가능 B가 사용가능한
+        $(document).ready(function(){
+            
+             $('#appliance').on('click', function() {
+                var res =$('#B').val() - $('#A').val() 
+                $('#B').val(res);
+                $('#A').val('0');
+            })
+        })
+
+        // <!-- 쿠폰선택 눌리면 popup창뜸 -->
+        function pcheck() {
+            var url = "popup.html";
+            var name = "popup test";
+            var option = "width = 800, height = 500, top = 100, left = 200, location = no"
+            window.open(url, name, option);
+        }
+
+    // 전체동의 체크박스
+        function allselect(chd) {
+            var agree = document.getElementsByName("agree");
+            for (var i = 0; i < agree.length; i++) {
+                agree[i].checked = chd;
+            }
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+   
+
+
+    
+
+    <!-- 푸터 시작 -->
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>modify</title>
+    
+    <link rel="stylesheet" href="../resources/css/headerfooterLayout.css">
+    <link rel="stylesheet" href="../resources/css/modify_3.css">
+</head>
+<body>
+    <header>
+        <nav id="nav">
+        <div id="logodiv"><img id="logo" src="../resources/images/KakaoTalk_20200101_193858750.png" alt=""></div>
+        <div id="navp">
+            <a class="navp" href=""><span>로그인</span></a>
+            <a class="navp" href=""><span>마이페이지</span></a>
+        </div>
+        </nav>
+    </header>
+    <div id="modiTop">
+    <h1>예약 변경</h1> <br>
+    <h2>예약 장소 : 역전우동</h2><br>
+    <hr>
+    </div>
+   
+   <div id="modifyF" id="modifyF">
+
+ 
+    <div id="modify1"> <!--왼쪽-->
+
+
+    <input type=textbox class="size" placeholder="예약자 : 이탐희">  <button>확인</button> <br><Br>
+    <input type=textbox class="size" placeholder="예약일 : 20-10-10 10:10">  <button>확인</button><br><Br>
+    
+        <form>
+        <input type="datetime-local">
+        </form><br><br>
+
+            <select>
+                <option value ="menu"> 메뉴</option>
+                <option value ="udon"> 우동</option>
+                <option value ="kimchi"> 김치우동</option>
+                <option value ="fry"> 튀김우동</option>
+                <option value ="oni"> 주먹밥</option>
+            </select>
+        </div> <br> <br> <br>
+
+        <div ="modifyMenu"> <!--수정한 메뉴-->
+            <div id="modifyMenu_1">
+                <img src="../resources/images/udon.png" class="registStoreImg" alt="그냥우동" width="50px" height="50px">
+                <h4 align="center">그냥우동</h4>
+            </div>    
+            <div id="modifyMenu_1">
+                <img src="../resources/images/kimudon.png" class="registStoreImg" alt="김치우동" width="50px" height="50px">
+                <h4 align="center">김치우동</h4>
+            </div>    
+            <div id="modifyMenu_1">
+                <img src="../resources/images/fryudon.png" class="registStoreImg" alt="튀김우동" width="50px" height="50px">
+                <h4 align="center">튀김우동</h4>
+            </div>    
+    
+            </div>
+
+        <div id="modify2"> <!-- 오른쪽-->
+
+            <div id="notice3"> <!--공지 이용약관-->
+
+                공지와 이용약관을 잘 숙지하신 후 주문하세요
+                </div> <br><br>
+    
+        </div>
+
+        <div id="btn">
+        <button type="submit">예약변경</button>
+        <button type="button">취소</button>
+     </div>
+    </div id="modifyF">
+        
+</body>
+</html>
