@@ -4,113 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../resources/css/headerfooterLayout.css">
+    <link rel="stylesheet" href="../resources/css/payPrint_1.css">
 
     <title>paid print</title>
 
     <!-- headerfooterLayout css파일 적용 하려니깐 오류남 이유를 몰르겠음 ㅜㅜ -->
 
-    <style>
-        /* 예약완료창 전체영역 */
-        .div1 {
-            margin-left: 17%;
-            width: 70%;
-            height: 750px;
-
-        }
-
-        /* 예약 번호,시간테이블 / 주문내역 /,결제정보창 전체영역 */
-        .div2 {
-
-            width: 45%;
-            height: 80%;
-        }
-
-        /*  */
-        .div3 {
-            width: 45%;
-            height: 80%;
-            display: inline-block;
-            text-align: left;
-        }
-    </style>
 </head>
 
-<header>
-    <nav id="nav">
-        <div id="logodiv"><img id="logo" src="../resources/images/KakaoTalk_20200101_193858750.png" alt=""></div>
-        <div id="navp">
-            <a class="navp" href=""><span>로그인</span></a>
-            <a class="navp" href=""><span>마이페이지</span></a>
-        </div>
-    </nav>
-</header>
+
 
 <body>
-    <div class="div1"><br><br><br><br><br><br>
-        <h2 style="text-align: center;">예약을 완료하였습니다</h2>
-        <br>
-        <hr>
-        <br><br><br>   
+    <header>
+        <nav id="nav">
+            <div id="logodiv"><img id="logo" src="../resources/images/KakaoTalk_20200101_193858750.png" alt=""></div>
+            <div id="navp">
+                <a class="navp" href=""><span>로그인</span></a>
+                <a class="navp" href=""><span>마이페이지</span></a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="div1">
+        <h2>예약을 완료하였습니다</h2>
+         
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 div2">
+                <div class="col-sm-6">
                     <div class="div3">
-                        <h4>예약번호</h4><br>
-                        <h4>예약시간</h4><br>
-                        <h4>테이블방식</h4><br>
+                        <h4>예약번호</h4>
+                        <h4>예약시간</h4>
+                        <h4>테이블방식</h4>
                     </div>
-                    <div class="div3">
-                        <h4>19122010120</h4><br>
-                        <h4>PM &nbsp;7:00</h4><br>
-                        <h4>1인 &nbsp;테이블</h4><br>
+                    <div class="div4">
+                        <h4>19122010120</h4>
+                        <h4>PM &nbsp;7:00</h4>
+                        <h4>1인 &nbsp;테이블</h4>
                     </div>
                 </div>
-                <div class="col-sm-6 div2">
 
-                    <div class="container" style="width:98%;">
-                        <div class="row">
-                            <div class="col-sm-6 div3">
+                    <div class="container">
+                        <div class="area2">
+                            <div class="orderList">
+                                주문내역
+                            </div>
+                            <div class="menu">
                                 <ul>
-                                    <li>주문내역</li><br>
-                                    <li>마일리지</li>
+                                    <li>옛날우동 3500원</li>
+                                    <li>새우튀김 1000원</li>
                                 </ul>
                             </div>
-                            <div class="col-sm-6 div3" style="text-align: left;">
-                                옛날우동 &nbsp;&nbsp;&nbsp;3500원<br>
-                                새우튀김 &nbsp;&nbsp;&nbsp;1000원<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                (-)100
+                            <div class="mileage">
+                                <li class="mil">마일리지</li>
+                                <li>(-)100</li>
                             </div>
                         </div>
-                    </div>
+                    
 
-                    <hr style="width:63%; ">
-                    <div class="container" style=" width: 98%; text-align: left;">
+                    <hr>
+                    <div class="container">
                         <div class="row">
-                            <div class="col-sm-6 div3">
-                                <ul>
-                                    <li>결제금액</li><br>
-                                    <li>결제정보</li>
-                                </ul>
+                            <div class="price">
+                                <div class="priceH1">결제금액</div>
+                                <div>4400원</div>
                             </div>
-                            <div class="col-sm-6 div3">
-                                4400원<br><br>
-                                네이버페이<br>
-                                일시불<br>
-                                승인일시:&nbsp;2019-12-20
+                            <div class="ex">
+                                <div class="exH1">결제정보</div>
+                                <div>
+                                    <ul>
+                                        <li>네이버페이</li>
+                                        <li>일시불</li>
+                                        <li>승인일시:&nbsp;2019-12-20</li>
+                                    </ul>
+                                </div>
+                            
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>    
+        <!-- <input type="button" value="예약취소">
+        <input type="button" value="홈으로 가기"> -->
+    </div>
+    
+</div>
+
         <footer>
 
         </footer>
