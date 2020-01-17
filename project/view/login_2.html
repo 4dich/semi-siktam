@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>headerfooterLayout</title>
-    <link rel="stylesheet" href="../resources/css/headerfooterLayout_copy.css">
+    <link rel="stylesheet" href="../resources/css/headerfooterLayout.css">
     <link rel="stylesheet" href="../resources/css/login_2.css">
 </head>
 <body>
@@ -18,20 +18,34 @@
         </nav>
     </header>
 
-    <!-- 이 안에 작업하기 -->
-    <div id="logodiv"><img id="logo" src="../resources/images/KakaoTalk_20200101_193858750.png" alt=""></div> 
-    <div class="login-wrap">
-        <h2>Login</h2>
-        
-        <div class="form">
-          <input type="text" placeholder="아이디를 입력해주세요!" name="un" class="info" /><br>
-          <input type="password" placeholder="비밀번호를 입력해 주세요!" name="pw" class="info" />
-          <button> 로그인하기 </button>
-          <a href="#"> <p> 아직 아이디가 없나요? 아이디를 만들어 보세요! </p></a>
-          <a href="#"> <p> 아이디/비밀번호가 기억나지 않으세요?</p></a>
-        </div>
-      </div>
 
+
+    <!-- 이 안에 작업하기 -->
+    <div id="container">
+        <div id="area1">
+            
+            <div class="logo">
+            <a href="main_6.html"><img src="../resources/images/KakaoTalk_20200101_193858750.png" alt=""></a>    
+            </div>
+        
+        <div class="line"></div>
+        <div class="login-wrap">
+                    
+            <div class="form">
+            <input type="text" placeholder="아이디를 입력해주세요!" name="un" class="info" />
+            <hr>
+            <input type="password" placeholder="비밀번호를 입력해 주세요!" name="pw" class="info" />
+            <hr>
+            <button> Login </button>
+            <div class="idPass">
+                <a href="#"> <p> 아직 아이디가 없나요? 아이디를 만들어 보세요! </p></a>
+                <a href="#"> <p> 아이디/비밀번호가 기억나지 않으세요?</p></a>
+            </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
 
 
 
