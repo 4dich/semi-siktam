@@ -8,32 +8,45 @@
     <title>Find Id</title>
     <style>
         .div1 {
-            margin-left: 32%;
+            margin-left: 26%;
             padding-left: 1%;
             /* border : 1px solid black; */
-            width: 40%;
+            width: 50%;
             height: 100px;
             background: rgb(13, 78, 100);
             color: orange;
         }
 
         .div2 {
-            margin-left: 32%;
+            margin-left: 26%;
             padding-left: 1%;
             /* border : 1px solid black; */
-            width: 40%;
-            height: 600px;
+            width: 50%;
+            height: 420px;
             background: orange;
         }
 
         .div3 {
-            margin-left: 32%;
+            margin-left: 26%;
             padding-left: 1%;
             /* border : 1px solid black; */
-            width: 40%;
+            width: 50%;
             height: 50px;
             background: rgb(13, 78, 100);
             color: orange;
+        }
+
+        .radio{
+            width:20px; height:20px;
+        }
+
+        .text{
+            width: 35%;
+            height: 25px;
+        }
+
+        button{
+            height: 30px;
         }
 
         #f1 {
@@ -70,26 +83,39 @@
         <h4>아이디 찾기 방법 중 가능한 방법을 선택해 주세요.</h4>
     </div>
     <div class="div2">
-        <input type="radio" id="phone" name="find" onclick="ss();"><label for="">핸드폰 인증</label><br>
-        <div id="f1" style="display: none;">
-            내명의로 가입한 아이디와, 이름/핸드폰번호가일치한 아이디를 찾습니다
-            <button>다음단계</button>
+        <br><br><br><br>
+        <div>
+            <input type="radio" id="phone" class="radio" name="find" onclick="ss();" style="width:20px; height:20px;">&nbsp;<label for="phone">핸드폰 인증</label><br><br>
+            <div id="f1" style="display: none;">
+                내명의로 가입한 아이디와, 이름/핸드폰번호가일치한 아이디를 찾습니다<br>
+                <button>다음단계</button>
+            </div>
         </div>
-        <input type="radio" id="rphone" name="find" onclick="ss();"><label fot="">등록된 핸드폰으로 찾기</label><br>
-        <div id="f2">
-            <input type="text" placeholder="이름을 입력해 주세요"><br>
-            <input type="text" placeholder="가입했을때 등록된 핸드폰 번호"> <button>다음단계</button>
+        <br>
+        <div>
+            <input type="radio" id="rphone"  class="radio" name="find" onclick="ss();">&nbsp;<label for="rphone">등록된 핸드폰으로 찾기</label><br><br>
+            <div id="f2">
+                <input type="text" class="text" placeholder="이름을 입력해 주세요"><br>
+                <input type="text" class="text" placeholder="가입했을때 등록된 핸드폰 번호">&nbsp;<button>다음단계</button>
+            </div>
         </div>
-        <input type="radio" id="email" name="find" onclick="ss();"><label fot="">등록된 이메일로 찾기</label><br>
-        <div id="f3">
-            <input type="email" placeholder="이메일을 입력해주세요"><button>다음단계</button>
+        <br>
+        <div>
+            <input type="radio" id="email" class="radio" name="find" onclick="ss();">&nbsp;<label for="email">등록된 이메일로 찾기</label><br><br>
+            <div id="f3">
+                <input type="email" class="text" placeholder="이메일을 입력해주세요">&nbsp;<button>다음단계</button>
+            </div>
         </div>
-        <input type="radio" id="pid" name="find" onclick="ss();"><label fot="">등록된 이름/생년월일/성별 찾기</label><br>
-        <div id="f4">
-            <input type="text" placeholder="이름을 입력해 주세요">&nbsp;<input type="date"><br>
-            <input type="">&nbsp;<button>다음단계</button>
+        <br>
+        <div>
+            <input type="radio" id="pid" class="radio" name="find" onclick="ss();">&nbsp;<label for="pid">등록된 이름/생년월일/성별 찾기</label><br><br>
+            <div id="f4">
+                <input type="text" class="text" placeholder="이름을 입력해 주세요">&nbsp;<input type="date" class="text">&nbsp;
+                <input type=""><br><button>다음단계</button>
+            </div>
         </div>
     </div>
+
 
     <script>
         function ss() {
@@ -120,7 +146,7 @@
     </script>
 
     <div class="div3">
-        비밀번호 찾으시나요? &nbsp;<a href="../views/FindPassword.html" style="color: orange;">비밀번호 찾기</a>
+        비밀번호 찾으시나요? &nbsp;<a href="../views/FindPassword.html" style="color: orange;">비밀번호 찾기 (이동)</a>
     </div>
     <br>
 
