@@ -1,0 +1,83 @@
+*{
+    list-style: none;
+}
+        /* 예약완료창 전체영역 */
+        .div1 {
+            width: 50%;
+            height: 750px;
+            margin: 0 auto;
+            padding-top: 150px;
+            border: 1px solid black;
+        }
+
+        h2{
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        .container{
+
+        }
+        .area2{
+            margin-top: 30px;
+        }
+        /* 주문내역 */
+        .orderList{
+            display: inline-block;
+            width: 49%;
+            vertical-align: top;
+            font-weight: bold;
+        }
+        .orderList ul{
+
+        }
+        .orderList li{
+
+        }
+        .menu{
+            display: inline-block;
+            width: 49%;
+        }
+        .menu li{
+
+        }
+        /* 마일리지 */
+        .mileage{
+            margin-top: 20px;
+        }
+        .mileage li{
+            display: inline-block;
+            width: 49%;
+        }
+        .mileage .mil{
+            font-weight: bold;
+        }
+        /* 결제정보 */
+        .price{
+
+        }
+        .price ul{
+
+        }
+        .price li{
+
+        }
+
+
+
+        /* 예약 번호,시간테이블 / 주문내역 /,결제정보창 전체영역 */
+        .div2 {
+
+        }
+
+        
+        .div3 {
+            width: 49%;
+            display: inline-block;
+            text-align: left;
+        }
+        .div3 h4{
+            padding: 2%;
+        }
+
+        
