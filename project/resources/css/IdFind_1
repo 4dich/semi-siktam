@@ -1,0 +1,59 @@
+/* 아이디 찾기 상단 */
+        .div1 {
+            margin-left: 26%;
+            padding-left: 1%;
+            /* border : 1px solid black; */
+            width: 50%;
+            height: 100px;
+            background: rgb(13, 78, 100);
+            color: orange;
+        }
+        /* 아이디 찾기 중간 */
+        .div2 {
+            margin-left: 26%;
+            padding-left: 1%;
+            /* border : 1px solid black; */
+            width: 50%;
+            height: 420px;
+            background: orange;
+        }
+        /* 아이디 찾기 하단 */
+        .div3 {
+            margin-left: 26%;
+            padding-left: 1%;
+            /* border : 1px solid black; */
+            width: 50%;
+            height: 50px;
+            background: rgb(13, 78, 100);
+            color: orange;
+        }
+        /* 라디오버튼 크기 */
+        .radio{
+            width:20px; height:20px;
+        }
+        /* text 크기  */
+        .text{
+            width: 35%;
+            height: 25px;
+        }
+        /* 버튼 크기 */
+        button{
+            height: 30px;
+        }
+
+        /* 아이디 찾기 폰 div */
+        #f1 {
+            display: none;
+        }
+        /* 아이디 찾기 폰2 div */
+        #f2 {
+            display: none;
+        }
+        /* 아이디찾기 이메일 div */
+        #f3 {
+            display: none;
+        }
+        /* 아이디 찾기 이름/생년월일/성별 */
+        #f4 {
+            display: none;
+        }
