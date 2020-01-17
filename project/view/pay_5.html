@@ -2,10 +2,10 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>pay2</title>
+    <title>pay5</title>
     <link rel="stylesheet" href="../resources/css/headerfooterLayout.css">
     <link rel="stylesheet" href="../resources/css/pay_5.css">
-    <script src="../../../4.JQuery/resources/js/jquery-3.4.1.min.js"></script>
+    <script src="../resources/js/jquery-3.4.1.min.js"></script>
 </head>
 <body>
     <!-- 헤더 시작 -->
@@ -31,25 +31,25 @@
                         <p class="title-1"><b>결제수단 선택</b></p>
                     </div>
                     <p class="sub-sub-title">온라인 결제</p><hr>
-                    <table>
+                    <table >
                         <tbody>
                             <tr>
-                                <th>일반결제</th>
+                                <th class="paytableth">일반결제</th>
                                 <td class="noline">
-                                    <input type="radio" id="creditcard1" class="pay"><label for="creditcard1">신용카드</label>
+                                    <input type="radio" id="creditcard1" name="pay" class="pay"><label for="creditcard1">신용카드</label>
                                 </td>
                             </tr>
                             <tr>
-                                <th>네이버페이 결제</th>
+                                <th class="paytableth">네이버페이 결제</th>
                                 <td class="noline">
-                                    <label for="creditcard2"><input type="radio" id="creditcard2" class="pay">
+                                    <label for="creditcard2"><input type="radio" id="creditcard2" name="pay" class="pay">
                                     <img src="../resources/images/네이버페이_로고_(800px_X_400px).jpg" id="naver" alt="네이버페이로고"></label>
                                 </td>
                             </tr>
                             <tr>
-                                <th>카카오페이 결제</th>
+                                <th class="paytableth">카카오페이 결제</th>
                                 <td class="noline">
-                                    <label for="creditcard3"><input type="radio" id="creditcard3" class="pay">
+                                    <label for="creditcard3"><input type="radio" id="creditcard3" name="pay" class="pay">
                                     <img src="../resources/images/카카오페이.png"  id="kakao" alt="카카오페이"></label>
                                 </td>
                             </tr>
@@ -69,7 +69,14 @@
                     <div id="sub-title">
                         <p class="title-1"><b>할인쿠폰 선택</b></p>
                     </div>
-                    <input type="text" id="coupon"><button id="couponclick" onclick="pcheck();">쿠폰선택</button>
+                    <input type="text" list="mylist" style="width:430px; height:40px; font-size: 15px;
+                    margin-top: 37px;">
+                    <datalist id="mylist">
+                        <option value="1,000원 할인">생일 기념 할인 쿠폰</option>
+                        <option value="1,000원 할인">오픈 이벤트 기념 할인 쿠폰</option>
+                        <option value="2,000원 할인">첫 가입 기념 할인 쿠폰</option>
+                    </datalist>
+                    <button id="couponclick">적용</button>
                     
                 </div>
             </div>
@@ -84,8 +91,41 @@
                         <p class="title-1"><b>역전우동-역삼점</b></p>
                     </div>
                     <div id="menulist">
-
+                        <table id="menutable" >
+                            <tr class="menupan">
+                                <td class="menu">옛날우동 X 1개</td>
+                                <td>3,500원</td>
+                            </tr>
+                            <tr class="menupan">
+                                <td class="menu">김치우동 X 1개</td>
+                                <td>3,500원</td>
+                            </tr>
+                            <tr class="menupan">
+                                <td class="menu">어묵우동 X 1개</td>
+                                <td>3,500원</td>
+                            </tr>
+                        </table>
+                        <br><br>
+                        <hr>
+                        <table id="menutable2">
+                            <tr class="menupan2">
+                                <td class="allpay"><b>총 결제 금액</b></td>
+                                <td><b>10,500원</b></td>
+                            </tr>
+                        </table>
                     </div>
+                </div>
+                <div id="content1-4">
+                  <ul id="agree">
+                      <li><label for="all_chk" class="chk_label"><input type="checkbox" id="all_chk" class="chk" onclick="allselect(this.checked)">전체동의</label></li><hr>
+                      <li><label for="sms_agree" class="chk_label"><input type="checkbox" id="sms_agree" name="agree" class="chk">SMS 수신동의</label><a href=""><sub>내용보기</sub></a></li>
+                      <li><label for="use_agree" class="chk_label"><input type="checkbox" id="use_agree" name="agree" class="chk">이용약관 동의(필수)</label><a href=""><sub>내용보기</sub></a></li>
+                      <li><label for="collect_chk" class="chk_label"><input type="checkbox" id="collect_agree" name="agree" class="chk">개인정보 수집 및 이용동의(필수)</label><a href=""><sub>내용보기</sub></a></li>
+                      <li><label for="third_agree" class="chk_label"><input type="checkbox" id="third_agree" name="agree" class="chk">개인정보 제3자 제공동의(필수)</label><a href=""><sub>내용보기</sub></a></li>
+                      <li><label for="electronic_agree" class="chk_label"><input type="checkbox" id="electronic_agree" name="agree" class="chk">전자금융거래 이용약관(필수)</label><a href=""><sub>내용보기</sub></a></li>
+                      <li><label for="fourteen_agree" class="chk_label"><input type="checkbox" id="fourteen_agree" name="agree" class="chk">만 14세 이상 사용자(필수)</label><a href=""><sub>내용보기</sub></a></li>
+                  </ul>
+                  <input type="button" id="payment" value="결제하기">
                 </div>
             </div>
         </div>
@@ -104,12 +144,12 @@
         })
 
         // <!-- 쿠폰선택 눌리면 popup창뜸 -->
-        function pcheck() {
-            var url = "popup.html";
-            var name = "popup test";
-            var option = "width = 800, height = 500, top = 100, left = 200, location = no"
-            window.open(url, name, option);
-        }
+        // function pcheck() {
+        //     var url = "popup_5.html";
+        //     var name = "popup test";
+        //     var option = "width = 800, height = 500, top = 100, left = 200, location = no"
+        //     window.open(url, name, option);
+        // }
 
     // 전체동의 체크박스
         function allselect(chd) {
