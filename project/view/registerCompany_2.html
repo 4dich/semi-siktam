@@ -61,7 +61,7 @@
         <nav id="nav">
         <div id="logodiv"><img id="logo" src="../resources/images/KakaoTalk_20200101_193858750.png" alt=""></div>
         <div id="navp">
-            <a class="navp" href=""><span>로그인</span></a><!--버튼 클릭시 로그인 화면으로 넘어가도록-->
+            <a class="navp" href="login_2.html"><span>로그인</span></a><!--버튼 클릭시 로그인 화면으로 넘어가도록-->
             <!-- <a class="navp" href=""><span>마이페이지</span></a> -->
         </div>
         </nav>
@@ -176,8 +176,8 @@
  
         </table><br>
         
-        <button type="button"  onclick="csdsd();"><h2>업체 등록 완료</h2></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button type="reset"><h2>업체 등록 취소</h2></button>
+        <button type="button" onclick="location.href='login_2.html'"><h2>업체 등록 완료</h2></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="reset"  onclick="location.href='main_6.html'"><h2>업체 등록 취소</h2></button>
         
         <script>
             $("#upload").click(function(){
@@ -188,6 +188,10 @@
                 $("#uploadpic2").css("display","block").css("background","gray");
                 
                 console.log("aaaa")
+            });
+            
+            $("#logo").click(function(){
+                 location.href="main_6.html";
             });
         </script>
 
