@@ -1,115 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>headerfooterLayout</title>
+    <script src="../resources/js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="../resources/css/headerfooterLayout_copy.css">
+    <link rel="stylesheet" href="../resources/css/login_2.css">
+</head>
+<body>
+    <!-- 헤더 시작 -->
+    <header>
+        <nav id="nav">
+        <!-- <div id="logodiv"><img id="logo" src="../resources/images/KakaoTalk_20200101_193858750.png" alt=""></div> -->
+        <div id="navp">
+            <!-- <a class="navp" href=""><span>로그인</span></a>
+            <a class="navp" href=""><span>마이페이지</span></a> -->
+        </div>
+        </nav>
+    </header>
+
+    <!-- 이 안에 작업하기 -->
+    <div id="logodiv"><img id="logo" src="../resources/images/KakaoTalk_20200101_193858750.png" alt=""></div> 
+    <div class="login-wrap">
+        <h2>Login</h2>
+        
+        <div class="form">
+          <input type="text" placeholder="아이디를 입력해주세요!" name="un" class="info" /><br>
+          <input type="password" placeholder="비밀번호를 입력해 주세요!" name="pw" class="info" />
+          <button onclick="location.href='main_6.html'"> 로그인하기 </button><!--결과값 일치시 메인페이지로 이동-->
+          <a href="join_3.html"> <p> 아직 아이디가 없나요? 아이디를 만들어 보세요! </p></a>
+          <a href="IdFind_1.html"> <p> 아이디/비밀번호가 기억나지 않으세요?</p></a>
+        </div>
+      </div>
+
+      <script>
+          $("#logo").click(function(){
+            location.href="main_6.html";
+          });
+      </script>
 
 
-* { box-sizing: border-box; margin: 0; padding:0; }
 
-html {
-  background: #95a5a6;
-  /* background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/dark_embroidery.png); */
-  font-family: 'Helvetica Neue', Arial, Sans-Serif;
-}
-.login-wrap {
-    /* position: relative; */
-    margin: 0 auto;
-    background: #ecf0f1;
-    width: 350px;
-    border-radius: 5px;
-    box-shadow: 3px 3px 10px #333;
-    padding: 15px;
-    position: absolute;
+
+
+
+
+
+
+   
+
+
     
-    left: 50%;
-    top: 50%;
-    margin-left: -150px;
-    margin-top: -150px;
-}   
-    h2 {
-      text-align: center;
-      font-weight: 200;
-      font-size: 2em;
-      margin-top: 10px;
-      color: #34495e;
-    }
-    
-    .form {
-      padding-top: 20px;
-      
-    }
-      button {
-        width:80%;
-        margin-left: 10%;
-        margin-bottom: 25px;
-        height: 40px;
-        border-radius: 5px;
-        outline: 0;
-        /* -moz-outline-style: none; */
-        
-      }
-      
-      input:focus {outline:none;}
-      input[type="text"],
-      input[type="password"] {
-        border: 1px solid #000000;
-        
-        /* margin: 0 0 10px 10px; */
-        width:230px;
-        height:30px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        margin-left: 50px;
-        padding: 0 0 0 10px;
-        font-size: 14px;
-        text-align: left;
-        border-radius: 20px;
-      }
-        
-      
-      
-      a {
-        text-align: center;
-        font-size: 10px;
-        color: #000000;
-      }
-        
-        p{
-          padding-bottom: 10px;
-        }
-        
-      
-      
-      button {
-        background: #e74c3c;
-        border:none;
-        color: white;
-        font-size: 18px;
-        font-weight: 200;
-        cursor: pointer;
-        margin-top: 10px;
-        transition: box-shadow .4s ease;
-      }
-/*     
-    &:after{
-    content:'';
-    position:absolute;
-    top: 0;
-    left: 0;
-    right: 0;    
-    background:-webkit-linear-gradient(left,               
-        #27ae60 0%, #27ae60 20%, 
-        #8e44ad 20%, #8e44ad 40%,
-        #3498db 40%, #3498db 60%,
-        #e74c3c 60%, #e74c3c 80%,
-        #f1c40f 80%, #f1c40f 100%
-        );
-       background:-moz-linear-gradient(left,               
-        #27ae60 0%, #27ae60 20%, 
-        #8e44ad 20%, #8e44ad 40%,
-        #3498db 40%, #3498db 60%,
-        #e74c3c 60%, #e74c3c 80%,
-        #f1c40f 80%, #f1c40f 100%
-        );
-      height: 5px;
-      border-radius: 5px 5px 0 0;
-  } */
-    
-  
-  
+
+    <!-- 푸터 시작 -->
+    <footer>
+
+    </footer>
+</body>
+</html>
