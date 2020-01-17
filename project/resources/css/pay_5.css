@@ -2,7 +2,7 @@
 #wrap{
     width:70%;
     height:900px;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     margin:auto; 
     padding-top: 100px;
     text-align: center;
@@ -10,7 +10,7 @@
 
 /* 전체 안 틀 */
 #contentBox{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
     height: 877px;
     position: relative;
@@ -32,7 +32,7 @@
 .content{
     width: 48%;
     height: 800px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: inline-block;
     position: relative;
     
@@ -67,11 +67,22 @@
     width:100%
 }
 
+#content1-4{
+    position: absolute;
+    top: 309px;
+    left: 0;
+    border: 1px solid lightgray;
+    height: 312px;
+    width: 100%;
+    text-align: left;
+    font-size:17px;
+}
+
 /* 결제하기 글자 네모창 */
 #title{
     width:100%;
     height:38px;
-    border : 1px solid red;
+    /* border : 1px solid red; */
     text-align: left;
     background-color: black;
     color:white;
@@ -89,7 +100,7 @@
 #sub-title{
     width:100%;
     height:38px;
-    border : 1px solid red;
+    /* border : 1px solid red; */
     text-align: left;
     background-color: lightgray;
     color:black;
@@ -109,7 +120,7 @@
 #sub-sub-title2{
     width:100%;
     height:38px;
-    border : 1px solid red;
+    /* border : 1px solid red; */
     text-align: left;
     background-color: white;
     color:black;
@@ -121,33 +132,40 @@
 table{
     padding-left: 6px;
     width:100%;
+    font-size: 17px;
     /* border: 1px solid black; */
 }
-td{
+.noline{
     /* border: 1px solid black; */
     text-align: center;
+    padding-left: 70px;
+    height: 50px;
 }
-th{
+.paytableth{
     width:220px;
     /* border: 1px solid black; */
     text-align: left;
+    padding-left: 10px;
     
 }
 
+/* 결제 라디오 버튼 */
 .pay{
     width:30px;
-    height:15px;
+    height:17px;
     margin-top:10px;
     vertical-align: 9px;
 }
 
+/* 네이버페이 사진 */
 #naver{
-    margin-left:-13px;
+    margin-left:-9px;
     height:35px;
     position: relative;
-    top: 3px;
+    top: 0px;
 }
 
+/* 카카오페이 사진 */
 #kakao{
     margin-left:-13px;
     height:43px;
@@ -157,11 +175,13 @@ th{
 
 }
 
+/* 신용카드 라벨 */
 label[for="creditcard1"] {
      position: relative;
      top: -9.5px;
 }
 
+/* 마일리지 입력칸 */
 .mileage{
     width: 20%;
     height: 30px;
@@ -170,15 +190,29 @@ label[for="creditcard1"] {
     position: relative;
 }
 
-#coupon{
-    width: 50%;
-    height: 30px;
+/* 마일리지 적용버튼 */
+#appliance{
+    width: 80px;
+    height: 35px;
     font-size: 15px;
-    margin-top: 37px;
-    margin-left: -30%;
-
+    margin-top: 20px;
+    margin-left: 1%;
+    
+    background-color: white;
+    border: 1px solid gray;
+    cursor: pointer;
 }
 
+/* 쿠폰선택 칸 */
+/* #mylist{
+    width: 430px;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 37px;
+    
+} */
+
+/* 쿠폰 버튼 클릭 */
 #couponclick{
     width: 80px;
     height: 35px;
@@ -190,18 +224,7 @@ label[for="creditcard1"] {
     cursor: pointer;
 }
 
-#appliance{
-    width: 80px;
-    height: 35px;
-    font-size: 15px;
-    margin-top: 20px;
-    margin-left: 20px;
-    
-    background-color: white;
-    border: 1px solid gray;
-    cursor: pointer;
-}
-
+/* 메뉴 리스트 */
 #menulist{
     position: absolute;
     left: 0;
@@ -212,3 +235,71 @@ label[for="creditcard1"] {
     overflow-y: scroll;
     
 }
+
+/* 메뉴 테이블 */
+#menutable{
+    width:100%;
+    margin-left: 10px;
+}
+
+/* 메뉴 tr */
+.menupan{
+    height: 40px;
+    font-size: 17px;
+}
+
+/* 메뉴명 td */
+.menu{
+    text-align: left;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+/* 총 금액 테이블 */
+#menutable2{
+    width:100%;
+    margin-left: 10px;
+    /* margin-top: 3px; */
+    font-size:18px;
+    color:red;
+}
+
+/* 총메뉴 tr */
+.menupan2{
+    height: 40px;
+}
+
+/* 총메뉴 td */
+.allpay{
+    text-align: left;
+    padding-right: 48px;
+    padding-left: 10px;
+}
+
+
+/* 약관 ul */
+#agree{
+    list-style: none;
+    line-height: 37px;
+    margin-left: 10px;
+}
+
+/* 약관 li */
+.chk{
+    width:23px;
+    height:23px;
+    position: relative;
+    top: 4.5px;
+    margin-right: 7px;
+}
+
+/* 결제하기 버튼 */
+#payment{
+    width:100%;
+    height:55px;
+    background-color: rgb(26, 214, 205);
+    font-size:19px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
