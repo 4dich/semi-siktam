@@ -5,6 +5,6 @@
 
 #완료한 페이지
 > main_6.html(메인페이지) <br>
-> payPrint_1.html(결제완료페이지)
-> productDetailPage_6.html(상세페이지)
-> login_2.html(로그인페이지)
+> payPrint_1.html(결제완료페이지)<br>
+> productDetailPage_6.html(상세페이지)<br>
+> login_2.html(로그인페이지)<br>
