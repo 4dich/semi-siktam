@@ -10,7 +10,7 @@
     <!-- 헤더 시작 -->
     <header>
         <nav id="nav">
-        <div id="logodiv"><img id="logo" src="../resources/images/KakaoTalk_20200101_193858750.png" alt=""></div>
+        <div id="logodiv"><a href="main_6.html"><img id="logo" src="../resources/images/KakaoTalk_20200101_193858750.png" alt=""></a></div>
         <div id="navp">
             <a class="navp" href=""><span>로그인</span></a>
             <a class="navp" href=""><span>마이페이지</span></a>
@@ -30,12 +30,195 @@
                     <li><b>내 프로필</b>
                     <input type="button" class="btn1" value="수정하기"></li><hr>
                     <li><b>예약 내역</b>
-                    <input type="button" class="btn1" value="수정하기"></li><hr>
+                    <input type="button" class="btn1" value="수정하기" onclick="test1();"></li><hr>
                     <li><b>결제 내역</b>
-                    <input type="button" class="btn1" value="확인하기"></li><hr>
+                    <input type="button" class="btn1" value="확인하기" onclick="test3();"></li><hr>
                 </ul>
             </div>
         </div>
+
+        <div id="modal1">
+            <div class="modal_content">
+                <h2>예약 내역</h2>
+                <br><br>
+                <table id="reservationTb1">
+                    <thead>
+                        <tr class="reservationTr">
+                            <th>매장명</th>
+                            <th>예약자명</th> 
+                            <th>핸드폰 번호</th> 
+                            <th>예약 테이블 형태</th> 
+                            <th>예약 메뉴</th> 
+                            <th>예약 시간</th> 
+                            <th>결제 금액</th> 
+                         </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="reservationTr">
+                            <td>역전우동</td>
+                            <td>안도건</td>
+                            <td>010-2222-3333</td>
+                            <td>1인 테이블</td>
+                            <td>김치우동 1</td>
+                            <td>12:00~13:00</td>
+                            <td>3,500원</td>
+                        </tr>
+                        <tr class="reservationTr">
+                            <td>곱창이야기</td>
+                            <td>이탐희</td>
+                            <td>010-4443-2332</td>
+                            <td>1인 테이블</td>
+                            <td>곱창모듬 1</td>
+                            <td>18:00~19:00</td>
+                            <td>11,000원</td>
+                        </tr>
+                        <tr class="reservationTr">
+                            <td>역전우동</td>
+                            <td>김현희</td>
+                            <td>010-3221-4533</td>
+                            <td>바 테이블</td>
+                            <td>어묵우동 1</td>
+                            <td>12:00~13:00</td>
+                            <td>4,000원</td>
+                        </tr>
+                        <tr class="reservationTr">
+                            <td>싸움의고수</td>
+                            <td>서지원</td>
+                            <td>010-2678-3243</td>
+                            <td>2인 테이블</td>
+                            <td>보쌈정식XL 1</td>
+                            <td>13:00~14:00</td>
+                            <td>7,000원</td>
+                        </tr>
+                        <tr class="reservationTr">
+                            <td>곱창이야기</td>
+                            <td>권지안</td>
+                            <td>010-8554-4313</td>
+                            <td>2인 테이블</td>
+                            <td>소막창 1</td>
+                            <td>18:00~19:00</td>
+                            <td>11,000원</td>
+                        </tr>
+                        <tr class="reservationTr">
+                            <td>싸움의고수</td>
+                            <td>장한솔</td>
+                            <td>010-9911-7542</td>
+                            <td>1인 테이블</td>
+                            <td>족발정식XL 1</td>
+                            <td>13:00~14:00</td>
+                            <td>8,000원</td>
+                        </tr>
+                        <tr class="reservationTr">
+                            <td>역전우동</td>
+                            <td>이녹영</td>
+                            <td>010-7422-2203</td>
+                            <td>바 테이블</td>
+                            <td>토마토찍먹우동 1</td>
+                            <td>11:00~12:00</td>
+                            <td>7,000원</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><br>
+                <button id="modal_close_btn1" onclick="test2();">창 닫기</button>
+            </div>
+            <div class="modal_layer"></div>
+        </div>
+
+        <div id="modal2">
+            <div class="modal_content">
+                <h2>결제 내역</h2>
+                <br><br>
+                <table id="reservationTb2">
+                    <thead>
+                        <tr class="reservationTr">
+                            <th>매장명</th>
+                            <th>예약자명</th> 
+                            <th>메뉴</th> 
+                            <th>결제금액</th>  
+                            <th>결제방식</th>  
+                         </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="reservationTr">
+                            <td>역전우동</td>
+                            <td>안도건</td>
+                            <td>김치우동 1</td>
+                            <td>3,500원</td>
+                            <td>네이버페이</td>
+                        </tr>
+                        <tr class="reservationTr">
+                            <td>곱창이야기</td>
+                            <td>이탐희</td>
+                            <td>곱창모듬 1</td>
+                            <td>11,000원</td>
+                            <td>신용카드</td>
+                        </tr>
+                        <tr class="reservationTr">
+                            <td>역전우동</td>
+                            <td>김현희</td>
+                            <td>어묵우동 1</td>
+                            <td>4,000원</td>
+                            <td>카카오페이</td>
+                        </tr>
+                        <tr class="reservationTr">
+                            <td>싸움의고수</td>
+                            <td>서지원</td>
+                            <td>보쌈정식XL 1</td>
+                            <td>7,000원</td>
+                            <td>네이버페이</td>
+                        </tr>
+                        <tr class="reservationTr">
+                            <td>곱창이야기</td>
+                            <td>권지안</td>
+                            <td>소막창 1</td>
+                            <td>11,000원</td>
+                            <td>신용카드</td>
+                        </tr>
+                        <tr class="reservationTr">
+                            <td>싸움의고수</td>
+                            <td>장한솔</td>
+                            <td>족발정식XL 1</td>
+                            <td>8,000원</td>
+                            <td>네이버페이</td>
+                        </tr>
+                        <tr class="reservationTr">
+                            <td>역전우동</td>
+                            <td>이녹영</td>
+                            <td>토마토찍먹우동 1</td>
+                            <td>7,000원</td>
+                            <td>카카오페이</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                <br><br>
+                <button id="modal_close_btn2" onclick="test4();">창 닫기</button>
+            </div>
+            <div class="modal_layer"></div>
+        </div>
+
+        <script>
+            function test1(){
+                document.getElementById('modal1').style.display = "block";
+                document.getElementById('content2').style.display = "none";
+            }
+
+            function test2(){
+                document.getElementById('modal1').style.display = "none";
+                document.getElementById('content2').style.display = "block";
+            }
+
+            function test3(){
+                document.getElementById('modal2').style.display = "block";
+                document.getElementById('content2').style.display = "none";
+            }
+            function test4(){
+                document.getElementById('modal2').style.display = "none";
+                document.getElementById('content2').style.display = "block";
+            }
+        </script>
+
         <div class ="content" id="content2">
 
 
