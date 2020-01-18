@@ -1,8 +1,8 @@
 .wrap{
     /* 전체 div */
     width:80%;
-    height:750px;
-    /* border: 1px solid black; */
+    height:900px;
+    border: 1px solid black;
     margin:auto; 
     padding-top: 100px;
 }
@@ -68,9 +68,8 @@ table {
 
 }
 
-/* 약관동의 css(사용안함) */
 
-/* #chkwrap1{
+#chkwrap1{
     width:480px;
     text-align: left;
     padding-bottom: 10px;
@@ -83,18 +82,18 @@ table {
     text-align: left;
     padding-bottom: 10px;
     margin-bottom: 10px;
-} */
-/* .all-chk{
+} 
+.all-chk{
     border-bottom: 1px solid lightgray;
     background: rgb(82, 82, 82);
     color:white;
     height: 37px;
-} */
-/* .chk-info{
+} 
+.chk-info{
     list-style:none;
     
-} */
-/* label{
+} 
+label{
     font-size:14px;
     vertical-align: sub;
     padding-left:3px;
@@ -102,4 +101,4 @@ table {
 .chk_1{
     vertical-align:-2px;
     
-} */
+}
