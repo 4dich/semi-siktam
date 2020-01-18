@@ -1,13 +1,18 @@
 *{
     list-style: none;
 }
+hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
         /* 예약완료창 전체영역 */
         .div1 {
-            width: 50%;
+            width: 35%;
             height: 750px;
             margin: 0 auto;
             padding-top: 150px;
-            border: 1px solid black;
+            /* border: 1px solid black; */
         }
 
         h2{
@@ -15,9 +20,7 @@
             margin-bottom: 100px;
         }
 
-        .container{
-
-        }
+        
         .area2{
             margin-top: 30px;
         }
@@ -28,15 +31,11 @@
             vertical-align: top;
             font-weight: bold;
         }
-        .orderList ul{
-
-        }
-        .orderList li{
-
-        }
+       
         .menu{
             display: inline-block;
             width: 49%;
+            text-align: right;
         }
         .menu li{
 
@@ -48,36 +47,67 @@
         .mileage li{
             display: inline-block;
             width: 49%;
+            text-align: right;
         }
         .mileage .mil{
             font-weight: bold;
+            text-align: left;
         }
         /* 결제정보 */
-        .price{
-
+        
+        .price div{
+            width: 49%;
+            display: inline-block;
+            text-align: right;
         }
-        .price ul{
-
+        .priceH1{
+            font-weight: bold;
+            text-align: left !important;
         }
-        .price li{
 
+        .ex{
+           margin-top: 30px;
+        }
+        .ex div{
+            display: inline-block;
+            width: 49%;
+            vertical-align: top;
+            text-align: right;
+        }
+
+        .exH1{
+            font-weight: bold;
+            text-align: left !important;
         }
 
 
 
         /* 예약 번호,시간테이블 / 주문내역 /,결제정보창 전체영역 */
-        .div2 {
-
-        }
-
-        
+               
         .div3 {
             width: 49%;
             display: inline-block;
             text-align: left;
         }
         .div3 h4{
-            padding: 2%;
+            padding-bottom: 6px;
         }
 
-        
+        .div4{
+            width: 49%;
+            display: inline-block;
+            text-align: right;
+        }
+        .div4 h4{
+            padding-bottom: 6px;
+        }
+
+        input{
+            width: 40%;
+            margin: 4%;
+            margin-top: 38px;
+            height: 35px;
+            /* border-radius: 15%; */
+            background: white;
+            font-weight: bold;
+        }
