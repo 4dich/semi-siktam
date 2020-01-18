@@ -13,9 +13,10 @@
 > termsOfUse2_5(결제_이용약관페이지) <br>
 > registerPerson_5(개인_회원가입페이지)<br>
 > registerCompany_2(업체_회원가입페이지)<br>
-
-#html 완료한 페이지(현희 css검토필요)
 > mypagePerson_6(마이페이지_개인)<br>
 > mypageShop_5(마이페이지_업체)<br>
+
+#html 완료한 페이지(현희 css검토필요)
+
 
 
