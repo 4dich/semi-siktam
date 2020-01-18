@@ -1,16 +1,33 @@
+#area1{
+    width: 100%;
+    padding-top: 80px;
+    height: 100%;
+}
+#termsTitle{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px;
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
 /* 전체 큰 틀 div */
 #wrap{
-    width:80%;
-    height:1000px;
+    width: 70%;
+    height: auto;
     /* border: 1px solid orange; */
-    margin:auto; 
-    padding-top: 100px;
+    margin: auto;
+    /* padding-top: 100px; */
     text-align: center;
 }
 /* 내부 div 큰 틀 */
 #content{
     width:70%;
-    height:1000px;
+    height: auto;
     /* border: 1px solid blue; */
     display: inline-block;
     position: relative;
@@ -47,17 +64,14 @@
     vertical-align:sub;
 
 }
-/* 이전 및 다음 페이지 div */
+/* 버튼 */
 .button{
-    width:60%;
-    height:20px;
-    display:inline-block;
-    padding-top:20px;
-    font-size:20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* 각 약관 타이틀명 태그 */
 h3{
-    padding-top:7px;
-    padding-bottom:5px;
+    padding-top: 30px;
+    padding-bottom: 5px;
 }
