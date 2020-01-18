@@ -26,7 +26,7 @@
             <img src="../resources/images/udon.png" alt="">
         </div>
         <div id="titleText">
-            <h1><b>역전우동</b>(예약하기)</h1>
+            <h1><b>역전우동</b>(결제하기)</h1>
             <p>서울특별시 서초구 양재동 역전우동 양재점</p>
         </div>
     </div>
@@ -71,11 +71,16 @@
                     </table>
                 </div>
                 <div id="content1-2">
-                    <div id="sub-title">
-                        <p class="title-1"><b>마일리지 사용</b></p>
+                <div id="sub-title">
+                    <p class="title-1"><b>마일리지 사용</b></p>
+                </div>    
+                    <div id="mileageDiv">
+                        <div>
+                            <input type="text" class="mileage" id="A" value="0"><label id="won1">원 <--</label>
+                            <input type="text" class="mileage" id="B" value="10000" style="text-align: left;"><label id="won2">원</label>
+                        </div>
+                        <p>(사용가능 마일리지)</p>
                     </div>
-                    <input type="text" class="mileage" id="A" value="0"><label id="won1">원 <--</label>
-                    <input type="text" class="mileage" id="B" value="10000" style="text-align: left;"><label id="won2">원(사용가능 마일리지)</label>
                     <button id="appliance" >적용</button>
                     
                 </div>
@@ -83,8 +88,7 @@
                     <div id="sub-title">
                         <p class="title-1"><b>할인쿠폰 선택</b></p>
                     </div>
-                    <input type="text" list="mylist" style="width:430px; height:40px; font-size: 15px;
-                    margin-top: 37px;">
+                    <input type="text" list="mylist" style="width: 75%;height: 30px;font-size: 15px;">
                     <datalist id="mylist">
                         <option value="1,000원 할인">생일 기념 할인 쿠폰</option>
                         <option value="1,000원 할인">오픈 이벤트 기념 할인 쿠폰</option>
@@ -119,8 +123,6 @@
                                 <td>3,500원</td>
                             </tr>
                         </table>
-                        <br><br>
-                        <hr>
                     </div>
                     <table id="menutable2">
                         <tr class="menupan2">
@@ -131,7 +133,7 @@
                 </div>
                 <div id="content1-4">
                   <ul id="agree">
-                      <li><label for="all_chk" class="chk_label"><input type="checkbox" id="all_chk" class="chk" onclick="allselect(this.checked)">전체동의</label><a href="termsOfUse2_5.html" target="_blank"><small>내용보기</small></a></li><hr>
+                      <li><label for="all_chk" class="chk_label" id="all_chk"><input type="checkbox" id="all_chk" class="chk" onclick="allselect(this.checked)">전체동의</label><a href="termsOfUse2_5.html" target="_blank"><small>내용보기</small></a></li><hr>
                       <li><label for="sms_agree" class="chk_label"><input type="checkbox" id="sms_agree" name="agree" class="chk">SMS 수신동의</label></li>
                       <li><label for="use_agree" class="chk_label"><input type="checkbox" id="use_agree" name="agree" class="chk">이용약관 동의(필수)</label><a href="termsOfUse2_5.html" target="_blank"><small>내용보기</small></a></li>
                       <li><label for="collect_chk" class="chk_label"><input type="checkbox" id="collect_agree" name="agree" class="chk">개인정보 수집 및 이용동의(필수)</label><a href="termsOfUse2_5.html" target="_blank"><small>내용보기</small></a></li>
