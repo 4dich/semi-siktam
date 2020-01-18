@@ -170,10 +170,11 @@ body{
 .wrap{
     /* 전체 div */
     width:80%;
-    height:750px;
+    height:auto;
     /* border: 1px solid black; */
     margin:auto; 
     padding-top: 100px;
+    padding-bottom: 50px;
 }
 .regist{
     /* 회원가입 폼 table */
@@ -244,7 +245,25 @@ html{
 body{
     min-height:100%;
 }
+th{
+    vertical-align: top;
+    padding-top: 7px;
+}
 
+#category{
+    padding: 2%;
+    border: 3px solid #eee;
+}
+
+#tableForm{
+    padding: 2%;
+    border: 3px solid #eee;
+}
+.button{
+    padding: 2%;
+    /* box-shadow: 1px 0px 3px grey; */
+    border: 3px solid #eee;
+}
 /* 약관동의 css(사용안함) */
 
 /* #chkwrap1{
