@@ -11,12 +11,12 @@
     
 }
 #titleImg{
-    width: 75px;
+    width: 65px;
     display: inline-block;
     margin: 5px;
     border-radius: 50%;
     border: 5px solid rgb(13, 78, 100);
-    height: 75px;
+    height: 65px;
 }
 #titleImg img{
     width: 100%;
@@ -25,12 +25,14 @@
 }
 #titleText{
     display: inline-block;
-    vertical-align: top;
     color: rgb(13, 78, 100);
     margin-left: 10px;
+
 }
 #titleText h1{
     font-size: 25px;
+    margin-bottom: 7px;
+    font-weight: normal;
 }
 #titleText b{
     font-size: 30px;
@@ -43,6 +45,7 @@
 hr{
     margin-top: 20px;
     margin-bottom: 20px;
+    border-top: 1px solid #eee;
 }
 
 /* 전체 틀 */
