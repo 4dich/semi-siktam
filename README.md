@@ -16,4 +16,7 @@
 #html 완료한 페이지(현희 css검토필요)
 > registerPerson_5(개인_회원가입페이지)<br>
 > registerCompany_2(업체_회원가입페이지)<br>
+> mypagePerson_6(마이페이지_개인)<br>
+> mypageShop_5(마이페이지_업체)<br>
+
 
