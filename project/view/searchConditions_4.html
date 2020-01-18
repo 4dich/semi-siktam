@@ -87,6 +87,24 @@
             text-overflow: ellipsis;
         }
         
+        /* 업체 정보 별점 */
+        .star{
+            color:rgb(255, 158, 13);
+            font-weight: bold;
+        }
+        /* 업체 정보 | 표시 */
+        .review_num::before, .reserve_num::before{
+            content:" | ";
+            color:gray;
+        }
+        /* 업체 정보 > 표시 */
+        .tableInfo::before, .sectors::before{
+            content:" > ";
+            color:gray;
+        }
+
+
+
         td{
             padding: 0.5%;
         }
@@ -179,35 +197,46 @@
     <div id="result">
             <table border="1px" id="tbl">
                 <tr>
-                    <td id="img"><img src="../resources/images/01.png"  style="width:100%" alt="Image" class="img-thumbnail"></td>
+                    <td id="img"><img src="../resources/images/조건_역전우동.png"  style="width:100%" alt="Image" class="img-thumbnail"></td>
                     <td id="txt"  style="word-break:break-all">
                         <h4><b>역전 우동</b></h4>
                         <ul>
-                            <li>타인의 범죄행위로 인하여 생명·신체에 대한 피해를 받은 국민은 법률이 정하는 바에 의하여 국가로부터 구조를 받을 수 있다.</li>
-                            <li>대통령은 내란 또는 외환의 죄를 범한 경우를 제외하고는 재직중 형사상의 소추를 받지 아니한다.</li>
-                            <li>국가원로자문회의의 의장은 직전대통령이 된다. 다만, 직전대통령이 없을 때에는 대통령이 지명한다.</li>
+                            <li><span class="star">★ 4.1</span><span class="review_num">리뷰 187</span><span class="reserve_num">예약 200</span></li>
+                            <li><span class="area">강남</span><span class="tableInfo">1인 테이블</span><span class="sectors">한식</span></li>
+                            <li><span class="mainMenu">대표메뉴 : 역전우동, 김치우동, 어묵우동 등</span></li>
                         </ul>
                     </td>
                 </tr>
                 <tr>
-                    <td id="img"><img src="../resources/images/02.png"  style="width:100%" alt="Image" class="img-thumbnail"></td>
+                    <td id="img"><img src="../resources/images/진씨화로.jpg"  style="width:100%" alt="Image" class="img-thumbnail"></td>
                     <td id="txt"  style="word-break:break-all">
                         <h4><b>진씨화로</b></h4>
                         <ul>
-                            <li>타인의 범죄행위로 인하여 생명·신체에 대한 피해를 받은 국민은 법률이 정하는 바에 의하여 국가로부터 구조를 받을 수 있다.</li>
-                            <li>대통령은 내란 또는 외환의 죄를 범한 경우를 제외하고는 재직중 형사상의 소추를 받지 아니한다.</li>
-                            <li>국가원로자문회의의 의장은 직전대통령이 된다. 다만, 직전대통령이 없을 때에는 대통령이 지명한다.</li>
+                            <li><span class="star">★ 4.5</span><span class="review_num">리뷰 137</span><span class="reserve_num">예약 221</span></li>
+                            <li><span class="area">강남</span><span class="tableInfo">1인 테이블</span><span class="sectors">한식</span></li>
+                            <li><span class="mainMenu">대표메뉴 : 육회비빔밥, 차돌된장찌개 등</span></li>
                         </ul>
                     </td>
                 </tr>
                 <tr>
-                    <td id="img"><img src="../resources/images/03.png"  style="width:100%" alt="Image" class="img-thumbnail"></td>
+                    <td id="img"><img src="../resources/images/곱창.png"  style="width:100%" alt="Image" class="img-thumbnail"></td>
                     <td id="txt"  style="word-break:break-all">
-                        <h4><b>장터</b></h4>
+                        <h4><b>곱창이야기</b></h4>
                         <ul>
-                            <li>타인의 범죄행위로 인하여 생명·신체에 대한 피해를 받은 국민은 법률이 정하는 바에 의하여 국가로부터 구조를 받을 수 있다.</li>
-                            <li>대통령은 내란 또는 외환의 죄를 범한 경우를 제외하고는 재직중 형사상의 소추를 받지 아니한다.</li>
-                            <li>국가원로자문회의의 의장은 직전대통령이 된다. 다만, 직전대통령이 없을 때에는 대통령이 지명한다.</li>
+                            <li><span class="star">★ 4.2</span><span class="review_num">리뷰 452</span><span class="reserve_num">예약 576</span></li>
+                            <li><span class="area">강남</span><span class="tableInfo">2인 테이블</span><span class="sectors">한식</span></li>
+                            <li><span class="mainMenu">대표메뉴 : 곱창모듬, 소곱창, 소막창 등</span></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="img"><img src="../resources/images/tamhate2.jpg"  style="width:100%" alt="Image" class="img-thumbnail"></td>
+                    <td id="txt"  style="word-break:break-all">
+                        <h4><b>에머이</b></h4>
+                        <ul>
+                            <li><span class="star">★ 4.4</span><span class="review_num">리뷰 387</span><span class="reserve_num">예약 401</span></li>
+                            <li><span class="area">강남</span><span class="tableInfo">1인 테이블</span><span class="sectors">아시안</span></li>
+                            <li><span class="mainMenu">대표메뉴 : 양지쌀국수, 분짜 등</span></li>
                         </ul>
                     </td>
                 </tr>
