@@ -13,4 +13,6 @@
 > pay_5.html(결제페이지) <br>
 > termsOfUse_5(가입_이용약관페이지) <br>
 > termsOfUse2_5(결제_이용약관페이지) <br>
+> registerPerson_5(개인_회원가입페이지)<br>
+> registerCompany_2(업체_회원가입페이지)<br>
 
