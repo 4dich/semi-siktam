@@ -18,6 +18,7 @@
 
 #html 완료한 페이지(현희 css검토필요)
 > searchConditions_4.html(조건검색페이지)<br>
+> join_3.html(회원가입선택페이지)>join_3.css에 마우스오버효과 넣었어요 확인부탁드려요!<br>
 
 
 
