@@ -2,11 +2,20 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>회원가입(개인)</title>
+    <title>회원가입(업체)</title>
     <link rel="stylesheet" href="../resources/css/regicomp2.css">
     <link rel="stylesheet" href="../resources/css/regicomp2_2.css">
     <script src="../resources/js/jquery-3.4.1.min.js"></script>
     <style>
+
+        .wrap{
+            /* 전체 div */
+            width:80%;
+            height:1200px;
+            border: 1px solid black;
+            margin:auto; 
+            padding-top: 100px;
+        }
         footer{
                 position: relative;
                 border: 1px solid black;
@@ -52,6 +61,42 @@
             width: 100px; height: 150px; background: white; color:black; margin-top:10px;
             display: none;
         }
+
+        #chkwrap1{
+            width: 480px;
+            text-align: left;
+            padding-bottom: 10px;
+            padding-right: 26px;
+            
+
+        }
+        #chkwrap2{
+            margin-right: 64px;
+            border: 1px solid lightgray;
+            width: 36%;
+            text-align: left;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        } 
+        .all-chk{
+            border-bottom: 1px solid lightgray;
+            background: rgb(82, 82, 82);
+            color:white;
+            height: 37px;
+        } 
+        .chk-info{
+            list-style:none;
+            
+        } 
+        label{
+            font-size:14px;
+            vertical-align: sub;
+            padding-left:3px;
+        }
+        .chk_1{
+            vertical-align:-2px;
+            
+        }
     </style>
     
 </head>
@@ -61,7 +106,7 @@
         <nav id="nav">
         <div id="logodiv"><img id="logo" src="../resources/images/KakaoTalk_20200101_193858750.png" alt=""></div>
         <div id="navp">
-            <a class="navp" href="login_2.html"><span>로그인</span></a><!--버튼 클릭시 로그인 화면으로 넘어가도록-->
+            <a class="navp" href=""><span>로그인</span></a><!--버튼 클릭시 로그인 화면으로 넘어가도록-->
             <!-- <a class="navp" href=""><span>마이페이지</span></a> -->
         </div>
         </nav>
@@ -175,9 +220,63 @@
             
  
         </table><br>
-        
+        <div id="chkwrap1" >
+            <h3>약관동의</h3>
+        </div>
+        <div id="chkwrap2">
+            
+            <div class="all-chk">
+                <label>
+                    <input type="checkbox" class="chk_1" name="all_agree" id="all_agree" value="all_agree"> 전체동의
+                </label>
+            </div>
+            <div class="chk">
+                <ul>
+                    <li class="chk-info">
+                        <label>
+                            <input type="checkbox" class="chk_1" name="agree1" id="agree1" value="agree1">
+                            이용약관동의(필수)
+                        </label>
+                        <a href="termsOfUse_5.html" target="_blank"><sub>내용보기</sub></a>
+                    </li>
+                    <li class="chk-info">
+                        <label>
+                            <input type="checkbox" class="chk_1" name="agree2" id="agree2" value="agree2">
+                            개인정보수집 및 이용동의(필수)
+                        </label>
+                        <a href="termsOfUse_5.html" target="_blank"><sub>내용보기</sub></a>
+                    </li>
+                    <li class="chk-info">
+                        <label>
+                            <input type="checkbox" class="chk_1" name="agree3" id="agree3" value="agree3">
+                            전자금융거래 이용약관(필수)
+                        </label>
+                        <a href="termsOfUse_5.html" target="_blank"><sub>내용보기</sub></a>
+                    </li>
+                    <li class="chk-info">
+                        <label>
+                            <input type="checkbox" class="chk_1" name="agree4" id="agree4" value="agree4">
+                            만 14세 이상 이용자(필수)
+                        </label>
+                        <a href="termsOfUse_5.html" target="_blank"><sub>내용보기</sub></a>
+                    </li>
+                    <li class="chk-info">
+                        <label>
+                            <input type="checkbox" class="chk_1"name="agree5" id="agree5" value="agree5">
+                            식탐 혜택알림 동의(선택)
+                        </label>
+                        <a href="termsOfUse_5.html" target="_blank"><sub>내용보기</sub></a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            
+        </div>
         <button type="button" onclick="location.href='login_2.html'"><h2>업체 등록 완료</h2></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <button type="reset"  onclick="location.href='main_6.html'"><h2>업체 등록 취소</h2></button>
+        </div>
+        
         
         <script>
             $("#upload").click(function(){
