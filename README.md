@@ -17,7 +17,7 @@
 > mypageShop_5(마이페이지_업체)<br>
 
 #html 완료한 페이지(현희 css검토필요)
-> searchConditions_4.html(조건검색페이지)_<br>
+> searchConditions_4.html(조건검색페이지)+업체정보만 추가<br>
 
 
 
