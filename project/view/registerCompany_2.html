@@ -2,102 +2,11 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>회원가입(업체)</title>
-    <link rel="stylesheet" href="../resources/css/regicomp2.css">
-    <link rel="stylesheet" href="../resources/css/regicomp2_2.css">
+    <title>회원가입(개인)</title>
+    <link rel="stylesheet" href="../resources/css/headerfooterLayout.css">
+    <link rel="stylesheet" href="../resources/css/registerCompany_2.css">
     <script src="../resources/js/jquery-3.4.1.min.js"></script>
-    <style>
 
-        .wrap{
-            /* 전체 div */
-            width:80%;
-            height:1200px;
-            border: 1px solid black;
-            margin:auto; 
-            padding-top: 100px;
-        }
-        footer{
-                position: relative;
-                border: 1px solid black;
-                width: 100%;
-                height: 70px;
-                padding-bottom: 0;
-                margin-top: 10px;
-                bottom:0px;
-                background: rgb(13, 78, 100);
-                
-    
-            } 
-        #category{
-            width: 300px; 
-            height: 70px; 
-            background: lightgray;
-        }
-
-        #tableForm{
-            width:300px;
-            height:30px;
-            background: lightgray;
-        }
-
-        th{
-            background:yellowgreen;
-        }
-
-        #upload{
-            width:100px;
-            height:45px;
-            background: lightgray;
-            color:white;
-            /* display: none; */
-        }
-
-        #uploadpic1{
-            width: 100px; height: 150px; background: gray; color:white;
-            display: none;
-        }
-
-        #uploadpic2{
-            width: 100px; height: 150px; background: white; color:black; margin-top:10px;
-            display: none;
-        }
-
-        #chkwrap1{
-            width: 480px;
-            text-align: left;
-            padding-bottom: 10px;
-            padding-right: 26px;
-            
-
-        }
-        #chkwrap2{
-            margin-right: 64px;
-            border: 1px solid lightgray;
-            width: 36%;
-            text-align: left;
-            padding-bottom: 10px;
-            margin-bottom: 10px;
-        } 
-        .all-chk{
-            border-bottom: 1px solid lightgray;
-            background: rgb(82, 82, 82);
-            color:white;
-            height: 37px;
-        } 
-        .chk-info{
-            list-style:none;
-            
-        } 
-        label{
-            font-size:14px;
-            vertical-align: sub;
-            padding-left:3px;
-        }
-        .chk_1{
-            vertical-align:-2px;
-            
-        }
-    </style>
     
 </head>
 <body>
@@ -201,7 +110,7 @@
                         
                         <button type="button" id="menu"><h3>메뉴 등록</h3></button><!--메뉴등록 버튼을 누르면 등록한 사진과 value를 바탕으로 하단에 메뉴 생성-->
                         
-                        <div id="uploadpic2" style="width: 100px; height: 150px; background: white; color:black; margin-top:10px;">
+                        <div id="uploadpic2" style="width: 100px; height: auto; background: white; color:black; margin-top:10px;">
                            <!--이미지를 디코드 할 방법 모색이 필요해 보임 size를 설정해도 div 태그를 넘어감-->
                         </div><!--메뉴명의 vaule와 등록한 사진 경로로 이미지 등록할 예정-->
                     </td>
@@ -220,63 +129,9 @@
             
  
         </table><br>
-        <div id="chkwrap1" >
-            <h3>약관동의</h3>
-        </div>
-        <div id="chkwrap2">
-            
-            <div class="all-chk">
-                <label>
-                    <input type="checkbox" class="chk_1" name="all_agree" id="all_agree" value="all_agree"> 전체동의
-                </label>
-            </div>
-            <div class="chk">
-                <ul>
-                    <li class="chk-info">
-                        <label>
-                            <input type="checkbox" class="chk_1" name="agree1" id="agree1" value="agree1">
-                            이용약관동의(필수)
-                        </label>
-                        <a href="termsOfUse_5.html" target="_blank"><sub>내용보기</sub></a>
-                    </li>
-                    <li class="chk-info">
-                        <label>
-                            <input type="checkbox" class="chk_1" name="agree2" id="agree2" value="agree2">
-                            개인정보수집 및 이용동의(필수)
-                        </label>
-                        <a href="termsOfUse_5.html" target="_blank"><sub>내용보기</sub></a>
-                    </li>
-                    <li class="chk-info">
-                        <label>
-                            <input type="checkbox" class="chk_1" name="agree3" id="agree3" value="agree3">
-                            전자금융거래 이용약관(필수)
-                        </label>
-                        <a href="termsOfUse_5.html" target="_blank"><sub>내용보기</sub></a>
-                    </li>
-                    <li class="chk-info">
-                        <label>
-                            <input type="checkbox" class="chk_1" name="agree4" id="agree4" value="agree4">
-                            만 14세 이상 이용자(필수)
-                        </label>
-                        <a href="termsOfUse_5.html" target="_blank"><sub>내용보기</sub></a>
-                    </li>
-                    <li class="chk-info">
-                        <label>
-                            <input type="checkbox" class="chk_1"name="agree5" id="agree5" value="agree5">
-                            식탐 혜택알림 동의(선택)
-                        </label>
-                        <a href="termsOfUse_5.html" target="_blank"><sub>내용보기</sub></a>
-                    </li>
-                    
-                    
-                </ul>
-            </div>
-            
-        </div>
-        <button type="button" onclick="location.href='login_2.html'"><h2>업체 등록 완료</h2></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button type="reset"  onclick="location.href='main_6.html'"><h2>업체 등록 취소</h2></button>
-        </div>
         
+        <button class="button" type="button"  onclick="csdsd();"><h2>업체 등록 완료</h2></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="button" type="reset"><h2>업체 등록 취소</h2></button>
         
         <script>
             $("#upload").click(function(){
@@ -288,12 +143,8 @@
                 
                 console.log("aaaa")
             });
-            
-            $("#logo").click(function(){
-                 location.href="main_6.html";
-            });
         </script>
-
+    </div>
     <!-- 푸터 시작 -->
     <footer>
 
