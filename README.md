@@ -9,11 +9,11 @@
 > productDetailPage_6.html(상세페이지)<br>
 > login_2.html(로그인페이지)<br>
 > pay_5.html(결제페이지) <br>
-
-#html 완료한 페이지(현희 css검토필요)
-
 > termsOfUse_5(가입_이용약관페이지) <br>
 > termsOfUse2_5(결제_이용약관페이지) <br>
+
+
+#html 완료한 페이지(현희 css검토필요)
 > registerPerson_5(개인_회원가입페이지)<br>
 > registerCompany_2(업체_회원가입페이지)<br>
 
