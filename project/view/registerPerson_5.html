@@ -11,10 +11,10 @@
     <!-- 헤더 시작 -->
     <header>
         <nav id="nav">
-        <div id="logodiv"><img id="logo" src="../resources/images/KakaoTalk_20200101_193858750.png" alt=""></div>
+        <div id="logodiv"><a href="main_6.html"><img id="logo" src="../resources/images/KakaoTalk_20200101_193858750.png" alt=""></a></div>
         <div id="navp">
-            <a class="navp" href=""><span>로그인</span></a>
-            <a class="navp" href=""><span>마이페이지</span></a>
+            <a class="navp" href="login_2.html"><span>로그인</span></a>
+            <!-- <a class="navp" href=""><span>마이페이지</span></a> -->
         </div>
         </nav>
     </header>
@@ -74,7 +74,7 @@
                     
                     <div class="all-chk">
                         <label>
-                            <input type="checkbox" class="chk_1" name="all_agree" id="all_agree" value="all_agree"> 전체동의
+                            <input type="checkbox" class="chk_1" name="all_agree" id="all_agree" value="all_agree" onclick="allselect(this.checked)"> 전체동의
                         </label>
                     </div>
                     <div class="chk">
@@ -88,28 +88,28 @@
                             </li>
                             <li class="chk-info">
                                 <label>
-                                    <input type="checkbox" class="chk_1" name="agree2" id="agree2" value="agree2">
+                                    <input type="checkbox" class="chk_1" name="agree1" id="agree2" value="agree2">
                                     개인정보수집 및 이용동의(필수)
                                 </label>
                                 <a href="termsOfUse_5.html" target="_blank"><sub>내용보기</sub></a>
                             </li>
                             <li class="chk-info">
                                 <label>
-                                    <input type="checkbox" class="chk_1" name="agree3" id="agree3" value="agree3">
+                                    <input type="checkbox" class="chk_1" name="agree1" id="agree3" value="agree3">
                                     전자금융거래 이용약관(필수)
                                 </label>
                                 <a href="termsOfUse_5.html" target="_blank"><sub>내용보기</sub></a>
                             </li>
                             <li class="chk-info">
                                 <label>
-                                    <input type="checkbox" class="chk_1" name="agree4" id="agree4" value="agree4">
+                                    <input type="checkbox" class="chk_1" name="agree1" id="agree4" value="agree4">
                                     만 14세 이상 이용자(필수)
                                 </label>
                                 <a href="termsOfUse_5.html" target="_blank"><sub>내용보기</sub></a>
                             </li>
                             <li class="chk-info">
                                 <label>
-                                    <input type="checkbox" class="chk_1"name="agree5" id="agree5" value="agree5">
+                                    <input type="checkbox" class="chk_1"name="agree1" id="agree5" value="agree5">
                                     식탐 혜택알림 동의(선택)
                                 </label>
                                 <a href="termsOfUse_5.html" target="_blank"><sub>내용보기</sub></a>
@@ -126,7 +126,15 @@
                 <!-- <input type="reset" class="btn" value="취소"> -->
              </div>
         </form> 
-       
+    
+        <script>
+            function allselect(chd) {
+            var agree1 = document.getElementsByName("agree1");
+            for (var i = 0; i < agree1.length; i++) {
+                agree1[i].checked = chd;
+            }
+        }
+        </script>
 
     
 
