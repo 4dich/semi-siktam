@@ -270,3 +270,15 @@ progress::-moz-progress-bar{
     height: 250px;
     margin: 0 auto;
 }
+#footerArea{
+    width: 70%;
+    margin: 0 auto;
+}
+#footerArea p{
+    color: white;
+    font-size: 10px;
+    padding-top: 12px;
+}
+#footerArea b{
+    color: white;
+}
