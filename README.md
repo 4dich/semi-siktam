@@ -15,6 +15,7 @@
 > registerCompany_2(업체_회원가입페이지)<br>
 > mypagePerson_6(마이페이지_개인)<br>
 > mypageShop_5(마이페이지_업체)<br>
+---------------------------------------여기까지 버튼 클릭 시 창 연결 기능 업데이트 완료<br>
 
 #html 완료한 페이지(현희 css검토필요)
 > searchConditions_4.html(조건검색페이지)<br>
