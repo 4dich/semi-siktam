@@ -9,114 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <style>
-
-        /* div{
-            border: 1px solid palevioletred;
-        } */
-        /* --------------------------------------------------- */
-        /* 윗부분 전체 div*/
-        #container{
-            margin-top: 20px;
-        }
-        /* 검색, 선택된필터, 정렬방법 div*/
-        #container .component{
-            width: 80%;
-            margin: auto;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        /* --------------------------------------------------- */
-        /* 검색 */
-        #search{
-            text-align: center;
-            width: 60%;
-            margin: auto;
-        }
-        /* 검색 input-text */
-        #search-text{
-            height: 44px;
-            width: 60%;
-        }
-        /* --------------------------------------------------- */
-        /*  정렬방법 dropdown 버튼*/
-        #list-sort{
-            text-align:right;
-        }
-        /* 정렬방법 dropdown 목록*/
-        .component ul{
-            margin: right;
-            text-align: right;
-        }
-        /* --------------------------------------------------- */
-        /* 테이블,음식,가격대 table */
-        .table-all{
-            width: 80%;
-            margin: auto;
-        }
-
-
-        /* 테이블,음식,가격대 table 행이름*/
-        .table-rowName{
-            padding: 10px;
-            width: 80px;
-            text-align: center;
-        }
-        /* 테이블,음식,가격대 table checkbox*/
-
-        /* --------------------------------------------------- */
-
-        /* --------------------------------------------------- */
-        /* 아랫부분 결과창 table */
-        #result #tbl{
-            height: 150px;
-            width: 80%;
-            border: 1px solid #d9d9d9;
-            margin: auto;
-            cursor: pointer;
-        }
-        /* 아랫부분 결과창 table img */
-        #result #img{
-            width: 150px;
-            padding: 1px;
-        }
-        /* 아랫부분 결과창 table text */
-        #result #txt{
-            padding: 5px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        
-        /* 업체 정보 별점 */
-        .star{
-            color:rgb(255, 158, 13);
-            font-weight: bold;
-        }
-        /* 업체 정보 | 표시 */
-        .review_num::before, .reserve_num::before{
-            content:" | ";
-            color:gray;
-        }
-        /* 업체 정보 > 표시 */
-        .tableInfo::before, .sectors::before{
-            content:" > ";
-            color:gray;
-        }
-
-
-
-        td{
-            padding: 0.5%;
-        }
-
-        #table1 label{
-            cursor: pointer;
-        }
-
-        #table2{
-            border: 5px solid #d9d9d9;
-        }
-    </style>
+    <link rel="stylesheet" href="../resources/css/searchConditions_4.css">  
 </head>
 <body>
     <!-- 헤더 시작 -->
@@ -131,6 +24,7 @@
     </header>
 
     <!-- 이 안에 작업하기 -->
+<div id="area1">
     <div id="container">
         <div id="search" class="component">
             <input type="text" placeholder="위치를 입력해주세요" id="search-text" class="form-control" style="display: inline-block;">
@@ -190,7 +84,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+   
 
     <hr>
 
@@ -256,11 +150,13 @@
             }
         }
     </script>
+    </div>
+</div>
 
     <!-- 푸터 시작 -->
-    <!-- <footer>
+    <footer>
 
-    </footer> -->
+    </footer>
 
 </body>
 </html>
