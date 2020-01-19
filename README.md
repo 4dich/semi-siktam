@@ -23,7 +23,7 @@
 
 > join_3.html(회원가입선택페이지)>join_3.css에 마우스오버효과 넣었어요 확인부탁드려요!<br>
 > registerPerson_5_7(회원수정페이지_마이페이지(개인)내정보수정에 필요)<br>
-> reservation_4(예약하기페이지)
+> reservation_4(예약하기페이지)<br>
 > productReviewPage_7(리뷰페이지)
 
 #새로 만들어야 하는 페이지
