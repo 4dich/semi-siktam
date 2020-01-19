@@ -19,6 +19,16 @@
 #html 완료한 페이지(현희 css검토필요)
 > searchConditions_4.html(조건검색페이지)<br>
 > join_3.html(회원가입선택페이지)>join_3.css에 마우스오버효과 넣었어요 확인부탁드려요!<br>
+> registerPerson_5_7(회원수정페이지_마이페이지(개인)내정보수정에 필요)<br>
+> reservation_4(예약하기페이지)
+
+#새로 만들어야 하는 페이지
+> 예약변경
+> 아이디 패스워드 찾기
+
+#삭제해도되는 페이지
+> popup_1.html
+
 
 
 
