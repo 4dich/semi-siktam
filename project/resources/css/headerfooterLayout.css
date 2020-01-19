@@ -50,3 +50,16 @@ footer{
     color: white;
     
 }
+
+#footerArea{
+    width: 70%;
+    margin: 0 auto;
+}
+#footerArea p{
+    color: white;
+    font-size: 9px;
+    padding-top: 12px;
+}
+#footerArea b{
+    color: white;
+}
