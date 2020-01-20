@@ -34,6 +34,13 @@
     height: 44px;
     width: 60%;
 }
+
+#searchbtn{
+    background: rgb(13, 78, 100);
+    color: white;
+    font-weight: bold;
+}
+
 /* --------------------------------------------------- */
 /*  정렬방법 dropdown 버튼*/
 #list-sort{
@@ -43,6 +50,14 @@
 .component ul{
     margin: right;
     text-align: right;
+}
+
+#sortbtn{
+    background: rgb(13, 78, 100);
+    height: 35px;
+    width: 100px;
+    color: white;
+    font-weight: bold;
 }
 /* --------------------------------------------------- */
 /* 테이블,음식,가격대 table */
