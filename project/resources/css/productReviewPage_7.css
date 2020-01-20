@@ -26,7 +26,7 @@ footer{
 #all{
     height: auto;
     /* border: 1px solid black; */
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     /* padding-top: 70px; */
 
@@ -44,7 +44,7 @@ footer{
 .pageselect{
     /* border: 1px solid black; */
     position: absolute;
-    width: 80%;
+    width: 70%;
     margin-top: -35px;
 }
 
@@ -142,25 +142,103 @@ footer{
 
 #wReview{
     float: left;
+    /* border: 1px solid; */
+    width: 10%;
+    height: 30px;
+    border-radius: 20px;
+    border: 3px solid #eee;
+    position: relative;
 }
-
+#wReviewbtn{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 10%; */
+    /* background: white; */
+    color: balck;
+    font-weight: bold;
+    opacity: 0;
+}
+#wReview p{
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    z-index: -300;
+    font-weight: bold;
+    color: gray;
+}
 #select1{
     float: right;
+    margin-top: -15px;
+}
+#select1 label{
+    color: gray;
+}
+#select1 select{
+    width: 80px;
+    height: 30px;
 }
 
-.id1{
-    width: 3%;
-    height: 3%;
+/* 리뷰 */
+.allReview{
+
 }
-.idLabel{
-    width: 30%;
+.personInfo{
+    background: #eee;
     height: 25px;
+    padding: 3%;
+}
+.id1{
+    width: 30px;
+    height: 30px;
+}
+.bottomBtn{
+    display: inline-block;
+    float: right;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
     text-align: center;
-    font-size: 15pt;
+    border: 3px solid gray;
+    border-radius: 50%;
+    top: -5px;
+    color: gray;
+    background: white;
+    font-size: 22px;
+}
+#btn1{
+
+}
+#personReview1{
+
+}
+.personReview{
+    padding: 3%;
+    
+}
+#star_view1{
+
+}
+
+.personReview p{
+    font-size: 13px;
+    color: #464646;
+}
+
+.idLabel{
+    vertical-align: top;
+    color: gray;
 }
 .reviewBtn{
     float: right;
     margin-top: 10px;
+    z-index: 1000;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 1px solid;
+    top: -10px;
+    opacity: 0;
 }
 
     /* 막대 바 */
@@ -223,7 +301,7 @@ progress::-moz-progress-bar{
 #star_view1 a{
     text-decoration: none;
     color: lightgray;
-    font-size: 12pt;
+    font-size: 20pt;
 }
 #star_view1 a.on{
     color: gold;
@@ -247,6 +325,8 @@ progress::-moz-progress-bar{
     color: gold;
 }
 
+
+
 /* 별점 끝 */
 #reviewText{
     width: 100%;
@@ -266,19 +346,9 @@ progress::-moz-progress-bar{
 }
 
 .imgDiv{
-    width: 250px;
-    height: 250px;
-    margin: 0 auto;
-}
-#footerArea{
-    width: 70%;
-    margin: 0 auto;
-}
-#footerArea p{
-    color: white;
-    font-size: 10px;
-    padding-top: 12px;
-}
-#footerArea b{
-    color: white;
+    width: 200px;
+    height: 200px;
+    /* margin: 0 auto; */
+    /* border: 1px solid; */
+    box-shadow: 0px 0px 2px grey;
 }
