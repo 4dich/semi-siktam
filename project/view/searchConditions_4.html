@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../resources/css/searchConditions_4.css">  
+    <link rel="stylesheet" href="../resources/css/searchConditions_4.css">
+
 </head>
 <body>
     <!-- 헤더 시작 -->
@@ -29,7 +30,7 @@
         <div id="search" class="component">
             <input type="text" placeholder="위치를 입력해주세요" id="search-text" class="form-control" style="display: inline-block;">
             
-            <a href="#" class="btn btn-default btn-lg">
+            <a href="#" class="btn btn-default btn-lg" id="searchbtn">
                 <span class="glyphicon glyphicon-ok"></span> 검색
             </a>
         </div>
@@ -75,7 +76,7 @@
 
         <div id="list-sort" class="component">
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">정렬 방법
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" id="sortbtn">정렬 방법
                 <span class="caret"></span></button>
                 <ul class="dropdown-menu dropdown-menu-right">
                     <li><a href="#">예약 많은 순</a></li>
