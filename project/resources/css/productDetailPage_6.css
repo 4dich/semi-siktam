@@ -89,7 +89,7 @@
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: bold;
-    background-color: gray;
+    background: rgb(13, 78, 100);
     color: white;
     cursor: pointer;
 }
