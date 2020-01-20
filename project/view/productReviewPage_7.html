@@ -78,7 +78,9 @@
 
             <div id="wReview">
                 <button id="wReviewbtn">리뷰 작성</button>
+                <p>리뷰 쓰기</p>
             </div>
+            <br>
             <div id="select1"> <!-- 리뷰 시작 -->
                 <label>정렬방식</label> <!-- 리뷰 정렬 방식 선택-->
                 <select> <!-- TODO -->
@@ -124,11 +126,10 @@
         <!-- 각 버튼은 리뷰 상세를 열고 닫는 버튼 설정 TODO-->
 
         <div class="allReview">
-            <div>
+            <div class="personInfo">
                 <img class="id1" src="../resources/images/person1.png" alt="">&nbsp;&nbsp;<label class="idLabel">hyeonhee9411</label>
-                <button id="btn1" class="reviewBtn">자세히 보기</button>
+                <div class="bottomBtn"><button id="btn1" class="reviewBtn">▼</button>▼</div>
             </div>
-            <br>
             <div id="personReview1" class="personReview">
                 <label>별점 : </label>
                 <label id="star_view1">
@@ -140,21 +141,20 @@
                 </label>
                 <br><br>
                 <div class="imgDiv">
-                    <img src="../resources/images/07.png" id="reviewImg" alt="">
+                    <img src="../resources/images/07.png" class="reviewImg" alt="">
                 </div>
                 <br>
                 <p>족발이 사진과 너무 다르게 와서 양도 적고 아쉽지만 맛은 정말 맛있습니다!<br>다음에 또 시켜먹을께요!</p>
             </div>
         </div>
 
-        <br><br>
+        <br>
 
         <div class="allReview">
-            <div>
+            <div class="personInfo">
                 <img class="id1" src="../resources/images/person1.png" alt="">&nbsp;&nbsp;<label class="idLabel">tamheekim0110</label>
-                <button id="btn2" class="reviewBtn">자세히 보기</button>
+                <div class="bottomBtn"><button id="btn2" class="reviewBtn">▼</button>▼</div>
             </div>
-            <br>
             <div id="personReview2" class="personReview">
                 <label>별점 : </label>
                 <label id="star_view2">
@@ -175,14 +175,13 @@
             </div>
         </div>
 
-        <br><br>
+        <br>
 
         <div class="allReview">
-            <div>
+            <div class="personInfo">
                 <img class="id1" src="../resources/images/person1.png" alt="">&nbsp;&nbsp;<label class="idLabel">jiwonseo309</label>
-                <button id="btn3" class="reviewBtn">자세히 보기</button>
+                <div class="bottomBtn"><button id="btn3" class="reviewBtn">▼</button>▼</div>
             </div>
-            <br>
             <div id="personReview3" class="personReview">
                 <label>별점 : </label>
                 <label id="star_view3">
@@ -202,8 +201,6 @@
                 </p>
             </div>
         </div>
-        <br>
-        <br>
         <br>
 
         <script>
@@ -278,16 +275,13 @@
 
     <!-- 푸터 시작 -->
     <footer>
-        <div id="footerArea">
-        <p>
-            <b>식탐</b><br>
-            서울시 강남구 역상동 테헤란로 12길 남도빌딩 kh정보교육원 3층 h클래스 <br>
-            대표자 : 상또두리 | 사업자 등록번호 : 328478-24-2348971<br>
-            전화 : 010365656 | 팩스 : 0236541255| honbabsiktam.co.kr<br>
-            <br>
-            <b>Copyright c 식탐 All rights reserved</b>
-        </p>
-        </div>
+        <pre style="color: white;">
+            식탐
+            서울시 강남구 역상동 테헤란로 12길 남도빌딩 kh정보교육원 3층 h클래스 
+            대표자: 상또두리 | 사업자 등록번호 비밀
+            전화 010365656 | 팩스 0236541255| honbabsiktam.co.kr
+            
+            <b style="color: gainsboro;">Copyright c 식탐 All rights reserved</b></pre>
     </footer>
 </body>
 </html>
