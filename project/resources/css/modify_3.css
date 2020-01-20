@@ -155,6 +155,10 @@ ul.tabs li.current{
     width: 40%;
     margin: auto;
     margin-bottom: 0px;
+    background: rgb(13, 78, 100);
+    height: 35px;
+    color: white;
+    font-weight: bold;
 }
 
 #result4{
