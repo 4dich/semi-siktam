@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>공지사항</title>
+    <link rel="stylesheet" href="../resources/css/headerfooterLayout.css">
+    <link rel="stylesheet" href="../resources/css/">
+    <script src="../resources/js/jquery-3.4.1.min.js"></script>
+    <style>
+        .wrap{
+        width:70%;
+        height:900px;
+        /* border: 1px solid black; */
+        margin:auto; 
+        padding-top: 100px;
+        }
+
+        table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid #ddd;
+        margin-top:40px;
+        font-size:14px;
+        }
+
+        th, td {
+        text-align: center;
+        padding: 16px;
+        }
+
+        th:first-child, td:first-child {
+        text-align: left;
+        }
+
+        tr:nth-child(even) {
+        background-color: #f2f2f2
+        }
+
+        table thead tr{
+            border-bottom: 3px solid #036;
+        }
+
+        fieldset{
+            margin-top:20px;
+            border: none;
+            text-align: left;
+            font-size:14px;
+        }
+
+        #searchTxt{
+            margin-left:10px;
+            width:17%;
+            height:30px;
+        }
+
+        #searchBtn{
+            background: rgb(13, 78, 100);
+            width:60px;
+            height: 35px;
+            color: white;
+            font-weight: bold;
+            font-size:14px;
+        }
+
+
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <!-- 헤더 시작 -->
+    <header>
+        <nav id="nav">
+        <div id="logodiv"><a href="main_6.html"><img id="logo" src="../resources/images/KakaoTalk_20200101_193858750.png" alt=""></a></div>
+        <div id="navp">
+            <a class="navp" href="login_2.html"><span>로그인</span></a>
+            <a class="navp" href="mypagePerson_5.html"><span>마이페이지</span></a>
+        </div>
+        </nav>
+    </header>
+
+    <!-- 이 안에 작업하기 -->
+    <div class="wrap" align="center">
+            <div class="noticeTitle">
+                <h1>공지사항</h1>
+            </div>
+            <div class="tableDiv">
+                    <table>
+                        <thead>
+                            <tr>
+                              <th>번호</th>
+                              <th style="width:70%">제목</th>
+                              <th>작성자</th>
+                              <th>작성일</th>
+                              <th>조회</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <td>05</td>
+                              <td>결제 관련 공지</td>
+                              <td>관리자</td>
+                              <td>2020/01/25</td>
+                              <td>151</td>
+                            </tr>
+                            <tr>
+                              <td>04</td>
+                              <td>결제 관련 공지</td>
+                              <td>관리자</td>
+                              <td>2020/01/25</td>
+                              <td>151</td>
+                            </tr>
+                            <tr>
+                              <td>03</td>
+                              <td>결제 관련 공지</td>
+                              <td>관리자</td>
+                              <td>2020/01/25</td>
+                              <td>151</td>
+                            </tr>
+                            <tr>
+                              <td>02</td>
+                              <td>결제 관련 공지</td>
+                              <td>관리자</td>
+                              <td>2020/01/25</td>
+                              <td>151</td>
+                            </tr>
+                            <tr>
+                              <td>01</td>
+                              <td>결제 관련 공지</td>
+                              <td>관리자</td>
+                              <td>2020/01/25</td>
+                              <td>151</td>
+                            </tr>
+                            <tr>
+                              <td>01</td>
+                              <td>결제 관련 공지</td>
+                              <td>관리자</td>
+                              <td>2020/01/25</td>
+                              <td>151</td>
+                            </tr>
+                            <tr>
+                              <td>01</td>
+                              <td>결제 관련 공지</td>
+                              <td>관리자</td>
+                              <td>2020/01/25</td>
+                              <td>151</td>
+                            </tr>
+                            <tr>
+                              <td>01</td>
+                              <td>결제 관련 공지</td>
+                              <td>관리자</td>
+                              <td>2020/01/25</td>
+                              <td>151</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+            <fieldset>
+                <label for="name"><input type="radio" name="search" id="name">이름</label>
+                <label for="title"><input type="radio" name="search" id="title">제목</label>
+                <label for="text"><input type="radio" name="search" id="text">내용</label>
+                <input type="text" id="searchTxt">
+                <input type="button" id="searchBtn" value="검색">
+            </fieldset>
+    </div>
+
+
+
+
+
+
+   
+
+
+    
+
+    <!-- 푸터 시작 -->
+    <footer>
+        <div id="footerArea">
+        <p>
+            <b>식탐</b><br>
+            서울시 강남구 역상동 테헤란로 12길 남도빌딩 kh정보교육원 3층 h클래스 <br>
+            대표자 : 상또두리 | 사업자 등록번호 : 328478-24-2348971<br>
+            전화 : 010365656 | 팩스 : 0236541255| honbabsiktam.co.kr<br>
+            <br>
+            <b>Copyright c 식탐 All rights reserved</b>
+        </p>
+        </div>
+    </footer>
+</body>
+</html>
