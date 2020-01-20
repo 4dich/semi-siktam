@@ -1,48 +1,123 @@
 *{
     list-style: none;
 }
-/* 상단메인 */
-#mainbox{
-    border: 1px solid black;
+
+/* 네비게이터(로고, 로그인, 마이페이지) */
+header{
     width: 100%;
-    height: 370px;
-    background: rgb(221, 120, 25);
-    background-image: url(../images/mainboximg.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
-    margin-bottom: 50px;
-
 }
-#searchbox{
-    /* border: 1px solid black; */
-    width: 45%;
-    height: 40px;
+
+#nav {
+    width: 70%;
     margin: 0 auto;
-    margin-top: 190px;
-    background: white;
+    margin-top: 30px;
     position: relative;
-   
-
 }
-#searchtext{
-    width: 88%;
-    height: 32px;
-    background-color: transparent;
+
+nav #logodiv {
+    height: 150px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav #logo{
+    height: 130px;
+    width: 130px; 
+}
+
+nav #navp{
+    height: 100px;
+    text-align: right;
     position: absolute;
-    margin: 2px;
-    
+    top: 10px;
+    right: 10px;
 }
-#searchiconbox{
-    /* border: 1px solid black; */
+
+#navp span{
+    margin: 5px;
+}
+
+/* 검색창 */
+#div1{
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+body{
+    width: 100%;
+}
+
+body #div1 {
+    width: 522px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#div1 #searchtext{
+    width: 450px;
+    height: 39px;
+    margin: 0 auto;
     position: absolute;
-    right: 7px;
-
+    left: 15px;
+    top: 5px;
+    border: 1px solid white;
 }
 
-#searchicon{
-    margin-top: 5px;
-    width: 30px;
+#div1 #searchbtn{
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+    position: absolute;
+    right: 2px;
+    top: 4px;
+    /* z-index: -1; */
+    background: rgb(13, 78, 100);
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    /* border: rgb(13, 78, 100); */
+    border: 0;
+    outline: 0;
+}
+input:focus {outline:none;}
+
+/* 푸터(footer) */
+footer{
+    width: 100%;
+    height: 100px;
+    padding-bottom: 0;
+    bottom:0px;
+    background: rgb(13, 78, 100);
+}
+
+#footerArea{
+    width: 70%;
+    margin: 0 auto;
+}
+#footerArea p, b{
+    color: white;
+    font-size: 9px;
+    padding-top: 12px;
+    letter-spacing: 0.5px;
+    font-weight: lighter;
+    bottom: 0px;
+}
+
+#bannersection{
+    margin-top: 30px;
+}
+
+#bannersection ul{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#bannersection li{
+    margin: 1%;
 }
 
 /* 하단 배너 */
@@ -51,16 +126,17 @@
     width: 70%;
     margin: 0 auto;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     
 }
 .banner{
     width: 30%;
-    border: 1px solid lightgray;
+    border: 2px solid rgb(13, 78, 100);
     height: 250px;
     display: inline-block;
     padding: 1.2%;
     position: relative;
+    border-radius: 10px;
 }
 
 /* 배너 1 */
@@ -70,6 +146,8 @@
     height: 100%;
     background-size: cover;
     opacity: 0.3;
+    border-radius: 10px;
+    
 }
 .bannerimgb1:hover{
     -webkit-transform: scale(1.07);
@@ -96,6 +174,7 @@
     height: 100%;
     background-size: cover;
     opacity: 0.3;
+    border-radius: 10px;
 }
 .bannerimgb2:hover{
     -webkit-transform: scale(1.07);
@@ -121,6 +200,7 @@
     height: 100%;
     background-size: cover;
     opacity: 0.3;
+    border-radius: 10px;
 }
 .bannerimgb3:hover{
     -webkit-transform: scale(1.07);
@@ -146,6 +226,7 @@
     height: 100%;
     background-size: cover;
     opacity: 0.3;
+    border-radius: 10px;
 }
 .bannerimgb4:hover{
     -webkit-transform: scale(1.07);
@@ -171,6 +252,7 @@
     height: 100%;
     background-size: cover;
     opacity: 0.3;
+    border-radius: 10px;
 }
 .bannerimgb5:hover{
     -webkit-transform: scale(1.07);
@@ -196,6 +278,7 @@
     height: 100%;
     background-size: cover;
     opacity: 0.3;
+    border-radius: 10px;
 }
 .bannerimgb6:hover{
     -webkit-transform: scale(1.07);
@@ -211,5 +294,4 @@
     z-index: 200;
     width: 90%;
     margin-top: 94px;
-    
 }
