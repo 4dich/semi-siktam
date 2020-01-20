@@ -68,6 +68,15 @@ hr{
 .button{
     padding-top: 20px;
     padding-bottom: 20px;
+    
+}
+
+.button input[type="button"]{
+    background: rgb(13, 78, 100);
+    height: 35px;
+    width: 100px;
+    color: white;
+    font-weight: bold;
 }
 
 /* 각 약관 타이틀명 태그 */
