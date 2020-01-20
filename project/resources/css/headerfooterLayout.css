@@ -32,7 +32,7 @@ footer{
     
 }
 #nav{
-    width: 80%;
+    width: 70%;
     /* border: 1px solid black; */
     margin: 0 auto;
 }
@@ -44,6 +44,7 @@ footer{
     text-align: right;
     vertical-align: top;
     margin-top: 24px;
+    float: right;
 }
 .navp{
     padding: 3px;
