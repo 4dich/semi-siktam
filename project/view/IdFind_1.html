@@ -13,10 +13,9 @@
 <body>
     <header>
         <nav id="nav">
-            <div id="logodiv"><img id="logo" src="../resources/images/KakaoTalk_20200101_193858750.png" alt=""></div>
+            <a href="../view/main_6.html"><div id="logodiv"><img id="logo" src="../resources/images/KakaoTalk_20200101_193858750.png" alt=""></div></a>
             <div id="navp">
                 <a class="navp" href=""><span>로그인</span></a>
-                <a class="navp" href=""><span>마이페이지</span></a>
             </div>
         </nav>
     </header>
@@ -86,24 +85,24 @@
     <script>
         function divshow() {
             if ($('input:radio[id=phone]').is(':checked')) {
-                $('#f1').show();
+                $('#f1').slideDown();
             } else {
-                $('#f1').hide();
+                $('#f1').slideUp();
             }
             if ($('input:radio[id=rphone]').is(':checked')) {
-                $('#f2').show();
+                $('#f2').slideDown();
             } else {
-                $('#f2').hide();
+                $('#f2').slideUp();
             }
             if ($('input:radio[id=email]').is(':checked')) {
-                $('#f3').show();
+                $('#f3').slideDown();
             } else {
-                $('#f3').hide();
+                $('#f3').slideUp();
             }
             if ($('input:radio[id=pid]').is(':checked')) {
-                $('#f4').show();
+                $('#f4').slideDown();
             } else {
-                $('#f4').hide();
+                $('#f4').slideUp();
             }
         }
 
