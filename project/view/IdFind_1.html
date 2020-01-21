@@ -28,17 +28,20 @@
             <div id="area1Img">
                 <img src="../resources/images/KakaoTalk_20200101_193858750.png" alt="">
             </div>
+        <a href="../view/IdFind_1.html">
         <div id="area3">
             <div class="idDiv">
                 <h1>아이디 찾기</h1>
                 <hr class="hr">
             </div>
-
+        </a>
+        <a href="../view/FindPassword_1.html">
             <div class="pwdDiv">
                 <h1>비밀번호 찾기</h1>
                 <hr class="hr">
             </div>
         </div>
+        </a>
         <div id="area2">
         <div class="div2">
             <h4>아이디 찾기 방법 중 가능한 방법을 선택해 주세요.</h4>
@@ -81,24 +84,24 @@
     <script>
         function divshow() {
             if ($('input:radio[id=phone]').is(':checked')) {
-                $('#f1').slideDown();
+                $('#f1').show();
             } else {
-                $('#f1').slideUp();
+                $('#f1').hide();
             }
             if ($('input:radio[id=rphone]').is(':checked')) {
-                $('#f2').slideDown();
+                $('#f2').show();
             } else {
-                $('#f2').slideUp();
+                $('#f2').hide();
             }
             if ($('input:radio[id=email]').is(':checked')) {
-                $('#f3').slideDown();
+                $('#f3').show();
             } else {
-                $('#f3').slideUp();
+                $('#f3').hide();
             }
             if ($('input:radio[id=pid]').is(':checked')) {
-                $('#f4').slideDown();
+                $('#f4').show();
             } else {
-                $('#f4').slideUp();
+                $('#f4').hide();
             }
         }
 
